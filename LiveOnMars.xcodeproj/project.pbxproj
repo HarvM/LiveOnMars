@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49031AF9250804AD00EA084D /* LiveOnMarsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49031AF8250804AD00EA084D /* LiveOnMarsApp.swift */; };
+		49031AFB250804AD00EA084D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49031AFA250804AD00EA084D /* ContentView.swift */; };
+		49031AFD250804AD00EA084D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49031AFC250804AD00EA084D /* Assets.xcassets */; };
+		49031B00250804AD00EA084D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49031AFF250804AD00EA084D /* Preview Assets.xcassets */; };
+		49031B0B250804AE00EA084D /* LiveOnMarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49031B0A250804AE00EA084D /* LiveOnMarsTests.swift */; };
+		49031B16250804AE00EA084D /* LiveOnMarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49031B15250804AE00EA084D /* LiveOnMarsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49031B07250804AE00EA084D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49031AED250804AC00EA084D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49031AF4250804AC00EA084D;
+			remoteInfo = LiveOnMars;
+		};
+		49031B12250804AE00EA084D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49031AED250804AC00EA084D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49031AF4250804AC00EA084D;
+			remoteInfo = LiveOnMars;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49031AF5250804AD00EA084D /* LiveOnMars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveOnMars.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49031AF8250804AD00EA084D /* LiveOnMarsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveOnMarsApp.swift; sourceTree = "<group>"; };
+		49031AFA250804AD00EA084D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		49031AFC250804AD00EA084D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49031AFF250804AD00EA084D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		49031B01250804AD00EA084D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49031B06250804AE00EA084D /* LiveOnMarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveOnMarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49031B0A250804AE00EA084D /* LiveOnMarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveOnMarsTests.swift; sourceTree = "<group>"; };
+		49031B0C250804AE00EA084D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49031B11250804AE00EA084D /* LiveOnMarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveOnMarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49031B15250804AE00EA084D /* LiveOnMarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveOnMarsUITests.swift; sourceTree = "<group>"; };
+		49031B17250804AE00EA084D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49031AF2250804AC00EA084D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49031B03250804AE00EA084D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49031B0E250804AE00EA084D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49031AEC250804AC00EA084D = {
+			isa = PBXGroup;
+			children = (
+				49031AF7250804AD00EA084D /* LiveOnMars */,
+				49031B09250804AE00EA084D /* LiveOnMarsTests */,
+				49031B14250804AE00EA084D /* LiveOnMarsUITests */,
+				49031AF6250804AD00EA084D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49031AF6250804AD00EA084D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49031AF5250804AD00EA084D /* LiveOnMars.app */,
+				49031B06250804AE00EA084D /* LiveOnMarsTests.xctest */,
+				49031B11250804AE00EA084D /* LiveOnMarsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49031AF7250804AD00EA084D /* LiveOnMars */ = {
+			isa = PBXGroup;
+			children = (
+				49031AF8250804AD00EA084D /* LiveOnMarsApp.swift */,
+				49031AFA250804AD00EA084D /* ContentView.swift */,
+				49031AFC250804AD00EA084D /* Assets.xcassets */,
+				49031B01250804AD00EA084D /* Info.plist */,
+				49031AFE250804AD00EA084D /* Preview Content */,
+			);
+			path = LiveOnMars;
+			sourceTree = "<group>";
+		};
+		49031AFE250804AD00EA084D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				49031AFF250804AD00EA084D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		49031B09250804AE00EA084D /* LiveOnMarsTests */ = {
+			isa = PBXGroup;
+			children = (
+				49031B0A250804AE00EA084D /* LiveOnMarsTests.swift */,
+				49031B0C250804AE00EA084D /* Info.plist */,
+			);
+			path = LiveOnMarsTests;
+			sourceTree = "<group>";
+		};
+		49031B14250804AE00EA084D /* LiveOnMarsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				49031B15250804AE00EA084D /* LiveOnMarsUITests.swift */,
+				49031B17250804AE00EA084D /* Info.plist */,
+			);
+			path = LiveOnMarsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49031AF4250804AC00EA084D /* LiveOnMars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49031B1A250804AE00EA084D /* Build configuration list for PBXNativeTarget "LiveOnMars" */;
+			buildPhases = (
+				49031AF1250804AC00EA084D /* Sources */,
+				49031AF2250804AC00EA084D /* Frameworks */,
+				49031AF3250804AC00EA084D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveOnMars;
+			productName = LiveOnMars;
+			productReference = 49031AF5250804AD00EA084D /* LiveOnMars.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49031B05250804AE00EA084D /* LiveOnMarsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49031B1D250804AE00EA084D /* Build configuration list for PBXNativeTarget "LiveOnMarsTests" */;
+			buildPhases = (
+				49031B02250804AE00EA084D /* Sources */,
+				49031B03250804AE00EA084D /* Frameworks */,
+				49031B04250804AE00EA084D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49031B08250804AE00EA084D /* PBXTargetDependency */,
+			);
+			name = LiveOnMarsTests;
+			productName = LiveOnMarsTests;
+			productReference = 49031B06250804AE00EA084D /* LiveOnMarsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		49031B10250804AE00EA084D /* LiveOnMarsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49031B20250804AE00EA084D /* Build configuration list for PBXNativeTarget "LiveOnMarsUITests" */;
+			buildPhases = (
+				49031B0D250804AE00EA084D /* Sources */,
+				49031B0E250804AE00EA084D /* Frameworks */,
+				49031B0F250804AE00EA084D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49031B13250804AE00EA084D /* PBXTargetDependency */,
+			);
+			name = LiveOnMarsUITests;
+			productName = LiveOnMarsUITests;
+			productReference = 49031B11250804AE00EA084D /* LiveOnMarsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49031AED250804AC00EA084D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					49031AF4250804AC00EA084D = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					49031B05250804AE00EA084D = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 49031AF4250804AC00EA084D;
+					};
+					49031B10250804AE00EA084D = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 49031AF4250804AC00EA084D;
+					};
+				};
+			};
+			buildConfigurationList = 49031AF0250804AC00EA084D /* Build configuration list for PBXProject "LiveOnMars" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49031AEC250804AC00EA084D;
+			productRefGroup = 49031AF6250804AD00EA084D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49031AF4250804AC00EA084D /* LiveOnMars */,
+				49031B05250804AE00EA084D /* LiveOnMarsTests */,
+				49031B10250804AE00EA084D /* LiveOnMarsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49031AF3250804AC00EA084D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49031B00250804AD00EA084D /* Preview Assets.xcassets in Resources */,
+				49031AFD250804AD00EA084D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49031B04250804AE00EA084D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49031B0F250804AE00EA084D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49031AF1250804AC00EA084D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49031AFB250804AD00EA084D /* ContentView.swift in Sources */,
+				49031AF9250804AD00EA084D /* LiveOnMarsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49031B02250804AE00EA084D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49031B0B250804AE00EA084D /* LiveOnMarsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49031B0D250804AE00EA084D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49031B16250804AE00EA084D /* LiveOnMarsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49031B08250804AE00EA084D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49031AF4250804AC00EA084D /* LiveOnMars */;
+			targetProxy = 49031B07250804AE00EA084D /* PBXContainerItemProxy */;
+		};
+		49031B13250804AE00EA084D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49031AF4250804AC00EA084D /* LiveOnMars */;
+			targetProxy = 49031B12250804AE00EA084D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		49031B18250804AE00EA084D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49031B19250804AE00EA084D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49031B1B250804AE00EA084D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"LiveOnMars/Preview Content\"";
+				DEVELOPMENT_TEAM = YU65V62LAA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = LiveOnMars/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.LiveOnMars;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49031B1C250804AE00EA084D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"LiveOnMars/Preview Content\"";
+				DEVELOPMENT_TEAM = YU65V62LAA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = LiveOnMars/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.LiveOnMars;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		49031B1E250804AE00EA084D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YU65V62LAA;
+				INFOPLIST_FILE = LiveOnMarsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.LiveOnMarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveOnMars.app/LiveOnMars";
+			};
+			name = Debug;
+		};
+		49031B1F250804AE00EA084D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YU65V62LAA;
+				INFOPLIST_FILE = LiveOnMarsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.LiveOnMarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveOnMars.app/LiveOnMars";
+			};
+			name = Release;
+		};
+		49031B21250804AE00EA084D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YU65V62LAA;
+				INFOPLIST_FILE = LiveOnMarsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.LiveOnMarsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LiveOnMars;
+			};
+			name = Debug;
+		};
+		49031B22250804AE00EA084D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YU65V62LAA;
+				INFOPLIST_FILE = LiveOnMarsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.LiveOnMarsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LiveOnMars;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49031AF0250804AC00EA084D /* Build configuration list for PBXProject "LiveOnMars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49031B18250804AE00EA084D /* Debug */,
+				49031B19250804AE00EA084D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49031B1A250804AE00EA084D /* Build configuration list for PBXNativeTarget "LiveOnMars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49031B1B250804AE00EA084D /* Debug */,
+				49031B1C250804AE00EA084D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49031B1D250804AE00EA084D /* Build configuration list for PBXNativeTarget "LiveOnMarsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49031B1E250804AE00EA084D /* Debug */,
+				49031B1F250804AE00EA084D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49031B20250804AE00EA084D /* Build configuration list for PBXNativeTarget "LiveOnMarsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49031B21250804AE00EA084D /* Debug */,
+				49031B22250804AE00EA084D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49031AED250804AC00EA084D /* Project object */;
+}
