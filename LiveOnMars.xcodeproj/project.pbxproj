@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01EEADBFF503BAF74DCF3733 /* libPods-LiveOnMars-LiveOnMarsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A60510A35750C51922D89F9F /* libPods-LiveOnMars-LiveOnMarsUITests.a */; };
+		14E5CAC02045202457962C4D /* libPods-LiveOnMars.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E43A2B86DFCD2778952A4493 /* libPods-LiveOnMars.a */; };
 		49031AF9250804AD00EA084D /* LiveOnMarsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49031AF8250804AD00EA084D /* LiveOnMarsApp.swift */; };
 		49031AFB250804AD00EA084D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49031AFA250804AD00EA084D /* ContentView.swift */; };
 		49031AFD250804AD00EA084D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49031AFC250804AD00EA084D /* Assets.xcassets */; };
@@ -20,6 +22,10 @@
 		49031B2D250AE5BC00EA084D /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49031B2C250AE5BC00EA084D /* ImageCache.swift */; };
 		49031B2F250AE60C00EA084D /* ImageValues+Caching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49031B2E250AE60B00EA084D /* ImageValues+Caching.swift */; };
 		49031B31250AE8EB00EA084D /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49031B30250AE8EB00EA084D /* AsyncImage.swift */; };
+		49031B34250AFA3400EA084D /* JSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49031B33250AFA3400EA084D /* JSONModel.swift */; };
+		49031B37250BDB2700EA084D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49031B36250BDB2700EA084D /* NetworkManager.swift */; };
+		49245A52250D8A9F00F6E428 /* rawJSON in Resources */ = {isa = PBXBuildFile; fileRef = 49245A51250D8A9F00F6E428 /* rawJSON */; };
+		55D637D482D7CD6BC115F0E8 /* libPods-LiveOnMarsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E9881F59E83810AD6930F4 /* libPods-LiveOnMarsTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0416EF0C08BAE53DF8AB42ED /* Pods-LiveOnMars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveOnMars.debug.xcconfig"; path = "Target Support Files/Pods-LiveOnMars/Pods-LiveOnMars.debug.xcconfig"; sourceTree = "<group>"; };
+		2E468AB0DB2276B1A295B43E /* Pods-LiveOnMarsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveOnMarsTests.release.xcconfig"; path = "Target Support Files/Pods-LiveOnMarsTests/Pods-LiveOnMarsTests.release.xcconfig"; sourceTree = "<group>"; };
+		39E57A0C1DFD2B8709D85D73 /* Pods-LiveOnMars-LiveOnMarsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveOnMars-LiveOnMarsUITests.release.xcconfig"; path = "Target Support Files/Pods-LiveOnMars-LiveOnMarsUITests/Pods-LiveOnMars-LiveOnMarsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		49031AF5250804AD00EA084D /* LiveOnMars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveOnMars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49031AF8250804AD00EA084D /* LiveOnMarsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveOnMarsApp.swift; sourceTree = "<group>"; };
 		49031AFA250804AD00EA084D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +68,15 @@
 		49031B2C250AE5BC00EA084D /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		49031B2E250AE60B00EA084D /* ImageValues+Caching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageValues+Caching.swift"; sourceTree = "<group>"; };
 		49031B30250AE8EB00EA084D /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		49031B33250AFA3400EA084D /* JSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModel.swift; sourceTree = "<group>"; };
+		49031B36250BDB2700EA084D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		49245A51250D8A9F00F6E428 /* rawJSON */ = {isa = PBXFileReference; lastKnownFileType = text; path = rawJSON; sourceTree = "<group>"; };
+		A60510A35750C51922D89F9F /* libPods-LiveOnMars-LiveOnMarsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveOnMars-LiveOnMarsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9425A42B2E1C2AE5BA375C1 /* Pods-LiveOnMarsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveOnMarsTests.debug.xcconfig"; path = "Target Support Files/Pods-LiveOnMarsTests/Pods-LiveOnMarsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC6099DBD1BFB060355EFB29 /* Pods-LiveOnMars-LiveOnMarsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveOnMars-LiveOnMarsUITests.debug.xcconfig"; path = "Target Support Files/Pods-LiveOnMars-LiveOnMarsUITests/Pods-LiveOnMars-LiveOnMarsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4250203B9AF1595A1CFA7DD /* Pods-LiveOnMars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveOnMars.release.xcconfig"; path = "Target Support Files/Pods-LiveOnMars/Pods-LiveOnMars.release.xcconfig"; sourceTree = "<group>"; };
+		E43A2B86DFCD2778952A4493 /* libPods-LiveOnMars.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveOnMars.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0E9881F59E83810AD6930F4 /* libPods-LiveOnMarsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveOnMarsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14E5CAC02045202457962C4D /* libPods-LiveOnMars.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D637D482D7CD6BC115F0E8 /* libPods-LiveOnMarsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,25 +100,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01EEADBFF503BAF74DCF3733 /* libPods-LiveOnMars-LiveOnMarsUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B066735275412345BCD84A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0416EF0C08BAE53DF8AB42ED /* Pods-LiveOnMars.debug.xcconfig */,
+				D4250203B9AF1595A1CFA7DD /* Pods-LiveOnMars.release.xcconfig */,
+				CC6099DBD1BFB060355EFB29 /* Pods-LiveOnMars-LiveOnMarsUITests.debug.xcconfig */,
+				39E57A0C1DFD2B8709D85D73 /* Pods-LiveOnMars-LiveOnMarsUITests.release.xcconfig */,
+				B9425A42B2E1C2AE5BA375C1 /* Pods-LiveOnMarsTests.debug.xcconfig */,
+				2E468AB0DB2276B1A295B43E /* Pods-LiveOnMarsTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		49031AEC250804AC00EA084D = {
 			isa = PBXGroup;
 			children = (
-				49031B30250AE8EB00EA084D /* AsyncImage.swift */,
-				49031B2E250AE60B00EA084D /* ImageValues+Caching.swift */,
-				49031B2C250AE5BC00EA084D /* ImageCache.swift */,
-				49031B2A25095E6400EA084D /* ImageLoader.swift */,
-				49031B2825092DE700EA084D /* ExtensionWeatherView.swift */,
+				49031B35250BDB1500EA084D /* JSON */,
 				49031B2725091ABC00EA084D /* Views */,
+				49031B32250AE9A200EA084D /* ImageLoading */,
 				49031AF7250804AD00EA084D /* LiveOnMars */,
 				49031B09250804AE00EA084D /* LiveOnMarsTests */,
 				49031B14250804AE00EA084D /* LiveOnMarsUITests */,
 				49031AF6250804AD00EA084D /* Products */,
+				3B066735275412345BCD84A9 /* Pods */,
+				5A145C687926C781A659F31F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,9 +188,41 @@
 			children = (
 				49031B2525091AB200EA084D /* PhotoView.swift */,
 				49031B2325091A3A00EA084D /* WeatherView.swift */,
+				49031B2825092DE700EA084D /* ExtensionWeatherView.swift */,
 				49031AFA250804AD00EA084D /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		49031B32250AE9A200EA084D /* ImageLoading */ = {
+			isa = PBXGroup;
+			children = (
+				49031B2E250AE60B00EA084D /* ImageValues+Caching.swift */,
+				49031B2C250AE5BC00EA084D /* ImageCache.swift */,
+				49031B2A25095E6400EA084D /* ImageLoader.swift */,
+				49031B30250AE8EB00EA084D /* AsyncImage.swift */,
+			);
+			path = ImageLoading;
+			sourceTree = "<group>";
+		};
+		49031B35250BDB1500EA084D /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				49031B33250AFA3400EA084D /* JSONModel.swift */,
+				49031B36250BDB2700EA084D /* NetworkManager.swift */,
+				49245A51250D8A9F00F6E428 /* rawJSON */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		5A145C687926C781A659F31F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E43A2B86DFCD2778952A4493 /* libPods-LiveOnMars.a */,
+				A60510A35750C51922D89F9F /* libPods-LiveOnMars-LiveOnMarsUITests.a */,
+				F0E9881F59E83810AD6930F4 /* libPods-LiveOnMarsTests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +232,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49031B1A250804AE00EA084D /* Build configuration list for PBXNativeTarget "LiveOnMars" */;
 			buildPhases = (
+				757B9C8F8262A5164B2287BA /* [CP] Check Pods Manifest.lock */,
 				49031AF1250804AC00EA084D /* Sources */,
 				49031AF2250804AC00EA084D /* Frameworks */,
 				49031AF3250804AC00EA084D /* Resources */,
@@ -183,6 +250,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49031B1D250804AE00EA084D /* Build configuration list for PBXNativeTarget "LiveOnMarsTests" */;
 			buildPhases = (
+				A3B96CB7BC29F6152397EBF1 /* [CP] Check Pods Manifest.lock */,
 				49031B02250804AE00EA084D /* Sources */,
 				49031B03250804AE00EA084D /* Frameworks */,
 				49031B04250804AE00EA084D /* Resources */,
@@ -201,6 +269,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49031B20250804AE00EA084D /* Build configuration list for PBXNativeTarget "LiveOnMarsUITests" */;
 			buildPhases = (
+				DC2745106B37F9B6122CB6AC /* [CP] Check Pods Manifest.lock */,
 				49031B0D250804AE00EA084D /* Sources */,
 				49031B0E250804AE00EA084D /* Frameworks */,
 				49031B0F250804AE00EA084D /* Resources */,
@@ -262,6 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49245A52250D8A9F00F6E428 /* rawJSON in Resources */,
 				49031B00250804AD00EA084D /* Preview Assets.xcassets in Resources */,
 				49031AFD250804AD00EA084D /* Assets.xcassets in Resources */,
 			);
@@ -283,6 +353,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		757B9C8F8262A5164B2287BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiveOnMars-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3B96CB7BC29F6152397EBF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiveOnMarsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC2745106B37F9B6122CB6AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiveOnMars-LiveOnMarsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		49031AF1250804AC00EA084D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -292,7 +431,9 @@
 				49031B31250AE8EB00EA084D /* AsyncImage.swift in Sources */,
 				49031B2425091A3A00EA084D /* WeatherView.swift in Sources */,
 				49031B2B25095E6400EA084D /* ImageLoader.swift in Sources */,
+				49031B37250BDB2700EA084D /* NetworkManager.swift in Sources */,
 				49031AFB250804AD00EA084D /* ContentView.swift in Sources */,
+				49031B34250AFA3400EA084D /* JSONModel.swift in Sources */,
 				49031AF9250804AD00EA084D /* LiveOnMarsApp.swift in Sources */,
 				49031B2D250AE5BC00EA084D /* ImageCache.swift in Sources */,
 				49031B2625091AB200EA084D /* PhotoView.swift in Sources */,
@@ -450,6 +591,7 @@
 		};
 		49031B1B250804AE00EA084D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0416EF0C08BAE53DF8AB42ED /* Pods-LiveOnMars.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,6 +614,7 @@
 		};
 		49031B1C250804AE00EA084D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4250203B9AF1595A1CFA7DD /* Pods-LiveOnMars.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -494,6 +637,7 @@
 		};
 		49031B1E250804AE00EA084D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9425A42B2E1C2AE5BA375C1 /* Pods-LiveOnMarsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +660,7 @@
 		};
 		49031B1F250804AE00EA084D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E468AB0DB2276B1A295B43E /* Pods-LiveOnMarsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -538,6 +683,7 @@
 		};
 		49031B21250804AE00EA084D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC6099DBD1BFB060355EFB29 /* Pods-LiveOnMars-LiveOnMarsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -558,6 +704,7 @@
 		};
 		49031B22250804AE00EA084D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39E57A0C1DFD2B8709D85D73 /* Pods-LiveOnMars-LiveOnMarsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
