@@ -1,16 +1,16 @@
+////
+////  ExtensionWeatherView.swift
+////  LiveOnMars
+////
+////  Created by Marc Harvey on 09/09/2020.
+////
 //
-//  ExtensionWeatherView.swift
-//  LiveOnMars
+//import SwiftUI
 //
-//  Created by Marc Harvey on 09/09/2020.
-//
-
-import SwiftUI
-
-extension WeatherView {
-    
-    //api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0  < demo URL
-    
+//extension WeatherView {
+//    
+////    api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0  < demo URL
+//    
 //    func loadData() {
 //        guard let url = URL(string: "//api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0")
 //        else {
@@ -30,17 +30,10 @@ extension WeatherView {
 //        } .resume()
 //    }
 //}
-
-
-struct ExtensionWeatherView_Previews: PreviewProvider {
-    static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
-    }
-}
-}
-
-struct ExtensionWeatherView_Previews: PreviewProvider {
-    static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
-    }
-}
+//
+//
+//struct ExtensionWeatherView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+//    }
+//}

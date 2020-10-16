@@ -25,6 +25,7 @@
 		49031B34250AFA3400EA084D /* JSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49031B33250AFA3400EA084D /* JSONModel.swift */; };
 		49031B37250BDB2700EA084D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49031B36250BDB2700EA084D /* NetworkManager.swift */; };
 		49245A52250D8A9F00F6E428 /* rawJSON in Resources */ = {isa = PBXBuildFile; fileRef = 49245A51250D8A9F00F6E428 /* rawJSON */; };
+		498D3CC02538EB86007967BC /* PhotoViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D3CBF2538EB86007967BC /* PhotoViewExtension.swift */; };
 		55D637D482D7CD6BC115F0E8 /* libPods-LiveOnMarsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E9881F59E83810AD6930F4 /* libPods-LiveOnMarsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		49031B33250AFA3400EA084D /* JSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModel.swift; sourceTree = "<group>"; };
 		49031B36250BDB2700EA084D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		49245A51250D8A9F00F6E428 /* rawJSON */ = {isa = PBXFileReference; lastKnownFileType = text; path = rawJSON; sourceTree = "<group>"; };
+		498D3CBF2538EB86007967BC /* PhotoViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewExtension.swift; sourceTree = "<group>"; };
 		A60510A35750C51922D89F9F /* libPods-LiveOnMars-LiveOnMarsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveOnMars-LiveOnMarsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9425A42B2E1C2AE5BA375C1 /* Pods-LiveOnMarsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveOnMarsTests.debug.xcconfig"; path = "Target Support Files/Pods-LiveOnMarsTests/Pods-LiveOnMarsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC6099DBD1BFB060355EFB29 /* Pods-LiveOnMars-LiveOnMarsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveOnMars-LiveOnMarsUITests.debug.xcconfig"; path = "Target Support Files/Pods-LiveOnMars-LiveOnMarsUITests/Pods-LiveOnMars-LiveOnMarsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,7 +119,6 @@
 				B9425A42B2E1C2AE5BA375C1 /* Pods-LiveOnMarsTests.debug.xcconfig */,
 				2E468AB0DB2276B1A295B43E /* Pods-LiveOnMarsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -187,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				49031B2525091AB200EA084D /* PhotoView.swift */,
+				498D3CBF2538EB86007967BC /* PhotoViewExtension.swift */,
 				49031B2325091A3A00EA084D /* WeatherView.swift */,
 				49031B2825092DE700EA084D /* ExtensionWeatherView.swift */,
 				49031AFA250804AD00EA084D /* ContentView.swift */,
@@ -432,6 +434,7 @@
 				49031B2425091A3A00EA084D /* WeatherView.swift in Sources */,
 				49031B2B25095E6400EA084D /* ImageLoader.swift in Sources */,
 				49031B37250BDB2700EA084D /* NetworkManager.swift in Sources */,
+				498D3CC02538EB86007967BC /* PhotoViewExtension.swift in Sources */,
 				49031AFB250804AD00EA084D /* ContentView.swift in Sources */,
 				49031B34250AFA3400EA084D /* JSONModel.swift in Sources */,
 				49031AF9250804AD00EA084D /* LiveOnMarsApp.swift in Sources */,
