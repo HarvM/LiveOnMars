@@ -19,11 +19,11 @@ struct ContentView: View {
                     Image(systemName: "photo.fill")
                     Text("Photos")
                 }
-            ///Will show the user the current weather and the weather from the past week too
-            WeatherView()
+            ///Will show the user relevant news about Mars
+            NewsView()
                 .tabItem {
                     Image(systemName: "sun.min")
-                    Text("Current weather")
+                    Text("Updates")
                 }
         }
     }
