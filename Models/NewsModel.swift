@@ -15,7 +15,7 @@ class NewsFeed: ObservableObject, RandomAccessCollection {
     @Published var newsListItems = [NewsListItem]()
     var startIndex: Int {newsListItems.startIndex}
     var endIndex: Int {newsListItems.endIndex}
-    var urlMain = "https://newsapi.org/v2/everything?q=NASA&apiKey=cheeky"
+    var urlMain = "https://newsapi.org/v2/everything?q=NASA&apiKey=NADA&language=en&page="
     var nextPageToLoad = 1
     var currentlyLoading = false
     var doneLoading = false
