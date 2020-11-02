@@ -18,6 +18,9 @@ struct NewsView: View {
         List(newsFeed) {
             (article: NewsListItem) in
             NewsItemView(article: article)
+//                .onAppear {
+//                    self.newsFeed.loadMoreArticles(currentItem: article)
+//                }
         }
     }
 }

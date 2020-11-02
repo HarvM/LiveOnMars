@@ -10,14 +10,34 @@ import Foundation
 ///Random access collection:
 class NewsFeed: ObservableObject, RandomAccessCollection {
     
-    
-    
     //MARK: - Properties
     typealias Element = NewsListItem
     @Published var newsListItems = [NewsListItem]()
     var startIndex: Int {newsListItems.startIndex}
     var endIndex: Int {newsListItems.endIndex}
-    var urlMain = "http://newsapi.org/v2/everything?q=Mars&from=2020-10-31&sortBy=popularity&apiKey=PWOPA_NAWTY"
+    var urlMain = "https://newsapi.org/v2/everything?q=NASA&apiKey=cheeky"
+    var nextPageToLoad = 1
+    var currentlyLoading = false
+    var doneLoading = false
+    
+    ///Will ensure that when the user reaches the end of the page, the app will fetch the next page of news
+    func shouldLoadMoreData(currentItem: NewsListItem? = nil) -> Bool {
+        if currentlyLoading || doneLoading {
+            return false
+        }
+        ///Optional unwrapping - so if there is an item being handled then true
+        guard let currentItem = currentItem else {
+            return true
+        }
+        
+        ///When the user reaches the last 4 items or less then the new page of news will be laoded
+        for n in (newsListItems.count - 4)...(newsListItems.count-1) {
+            if n >= 0 && currentItem.uuid == newsListItems[n].uuid {
+                return true
+            }
+        }
+        return false
+    }
     
     //LOOK INTO MORE AND LEARN
     ///Will get the position of the user in the newsListItems array
@@ -27,12 +47,20 @@ class NewsFeed: ObservableObject, RandomAccessCollection {
     
     ///
     init() {
-        loadArticles()
+        loadMoreArticles()
     }
     
-    ///Will load the articles with URLSession from the API
-    func loadArticles() {
-        let url = URL(string: urlMain)!
+    ///Will load the articles with URLSession from the API and also prepare the next page to be loaded
+    func loadMoreArticles(currentItem: NewsListItem? = nil) {
+        
+        ///If no need to load more data then short circuit
+        if !shouldLoadMoreData(currentItem: currentItem) {
+            return
+        }
+        currentlyLoading = true
+                
+        let urlString = ("\(urlMain)\(nextPageToLoad)")
+        let url = URL(string: urlString)!
         let task = URLSession.shared.dataTask(with: url, completionHandler: parseArticlesFromResponse(data:response:error:))
         task.resume()
     }
@@ -71,17 +99,26 @@ class NewsFeed: ObservableObject, RandomAccessCollection {
     func parseArticlesFromResponse(data: Data?, response: URLResponse?, error: Error?) {
         guard error == nil else {
             print("Error: \(error!)")
+            currentlyLoading = false
+
             return
         }
         
         guard let data = data else {
             print("No data cap'n")
+            currentlyLoading = false
             return
         }
         ///The main thread will add the new articles gained from the parseArcticlesFromData func
+        ///Will also increment the pageNumber once the first once has been loaded to ensure next page loads
+        ///If valid JSON returned then but no articles then doneLoading more data in
         let newArticles = parseArticlesFromData(data: data)
         DispatchQueue.main.async {
             self.newsListItems.append(contentsOf: newArticles)
+            self.nextPageToLoad += 1
+            self.currentlyLoading = false
+            self.doneLoading = (newArticles.count == 0)
+
         }
         
     }

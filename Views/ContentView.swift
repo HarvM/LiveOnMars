@@ -22,7 +22,7 @@ struct ContentView: View {
             ///Will show the user relevant news about Mars
             NewsView()
                 .tabItem {
-                    Image(systemName: "sun.min")
+                    Image(systemName: "book")
                     Text("Updates")
                 }
         }

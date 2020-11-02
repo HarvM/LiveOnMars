@@ -12,12 +12,12 @@ import Alamofire
 struct PhotoView: View {
     
     var body: some View {
-       Text("Hey you")
-}
-
-struct PhotoView_Previews: PreviewProvider {
-    static var previews: some View {
-        PhotoView()
+        Text("Hey you")
     }
-}
+    
+    struct PhotoView_Previews: PreviewProvider {
+        static var previews: some View {
+            PhotoView()
+        }
+    }
 }
