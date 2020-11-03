@@ -29,13 +29,15 @@ struct NewsItemView: View {
     var article: NewsListItem
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("\(article.title)")
-                .font(.headline)
-            Text("\(article.author)")
-                .font(.subheadline)
+        HStack{
+            URLImageView()
+            VStack(alignment: .leading) {
+                Text("\(article.title)")
+                    .font(.headline)
+                Text("\(article.author ?? "No author found")")
+                    .font(.subheadline)
+            }
         }
-        .padding()
     }
 }
 

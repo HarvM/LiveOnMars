@@ -18,6 +18,10 @@
 		49031B2425091A3A00EA084D /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49031B2325091A3A00EA084D /* NewsView.swift */; };
 		49031B2625091AB200EA084D /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49031B2525091AB200EA084D /* PhotoView.swift */; };
 		499F163B254CF11F00561450 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499F163A254CF11F00561450 /* NewsModel.swift */; };
+		49FED0D42550D0D90012B978 /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FED0D32550D0D90012B978 /* URLImageView.swift */; };
+		49FED0DA2550D3940012B978 /* newsPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 49FED0D92550D3940012B978 /* newsPlaceholder.png */; };
+		49FED0DB2550D3940012B978 /* newsPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 49FED0D92550D3940012B978 /* newsPlaceholder.png */; };
+		49FED0DC2550D3940012B978 /* newsPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 49FED0D92550D3940012B978 /* newsPlaceholder.png */; };
 		55D637D482D7CD6BC115F0E8 /* libPods-LiveOnMarsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E9881F59E83810AD6930F4 /* libPods-LiveOnMarsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +61,8 @@
 		49031B2325091A3A00EA084D /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		49031B2525091AB200EA084D /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		499F163A254CF11F00561450 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		49FED0D32550D0D90012B978 /* URLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageView.swift; sourceTree = "<group>"; };
+		49FED0D92550D3940012B978 /* newsPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newsPlaceholder.png; sourceTree = "<group>"; };
 		A60510A35750C51922D89F9F /* libPods-LiveOnMars-LiveOnMarsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveOnMars-LiveOnMarsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9425A42B2E1C2AE5BA375C1 /* Pods-LiveOnMarsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveOnMarsTests.debug.xcconfig"; path = "Target Support Files/Pods-LiveOnMarsTests/Pods-LiveOnMarsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC6099DBD1BFB060355EFB29 /* Pods-LiveOnMars-LiveOnMarsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveOnMars-LiveOnMarsUITests.debug.xcconfig"; path = "Target Support Files/Pods-LiveOnMars-LiveOnMarsUITests/Pods-LiveOnMars-LiveOnMarsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +115,7 @@
 		49031AEC250804AC00EA084D = {
 			isa = PBXGroup;
 			children = (
+				49FED0D82550D34D0012B978 /* Assets */,
 				499F1639254CF0FB00561450 /* Models */,
 				49031B2725091ABC00EA084D /* Views */,
 				49031AF7250804AD00EA084D /* LiveOnMars */,
@@ -181,8 +188,17 @@
 			isa = PBXGroup;
 			children = (
 				499F163A254CF11F00561450 /* NewsModel.swift */,
+				49FED0D32550D0D90012B978 /* URLImageView.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		49FED0D82550D34D0012B978 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				49FED0D92550D3940012B978 /* newsPlaceholder.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		5A145C687926C781A659F31F /* Frameworks */ = {
@@ -303,6 +319,7 @@
 			files = (
 				49031B00250804AD00EA084D /* Preview Assets.xcassets in Resources */,
 				49031AFD250804AD00EA084D /* Assets.xcassets in Resources */,
+				49FED0DA2550D3940012B978 /* newsPlaceholder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +327,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49FED0DB2550D3940012B978 /* newsPlaceholder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49FED0DC2550D3940012B978 /* newsPlaceholder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +417,7 @@
 			files = (
 				49031B2425091A3A00EA084D /* NewsView.swift in Sources */,
 				49031AFB250804AD00EA084D /* ContentView.swift in Sources */,
+				49FED0D42550D0D90012B978 /* URLImageView.swift in Sources */,
 				499F163B254CF11F00561450 /* NewsModel.swift in Sources */,
 				49031AF9250804AD00EA084D /* LiveOnMarsApp.swift in Sources */,
 				49031B2625091AB200EA084D /* PhotoView.swift in Sources */,

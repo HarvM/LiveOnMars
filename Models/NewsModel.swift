@@ -15,39 +15,19 @@ class NewsFeed: ObservableObject, RandomAccessCollection {
     @Published var newsListItems = [NewsListItem]()
     var startIndex: Int {newsListItems.startIndex}
     var endIndex: Int {newsListItems.endIndex}
-    var urlMain = "https://newsapi.org/v2/everything?q=NASA&apiKey=NADA&language=en&page="
-    var nextPageToLoad = 1
+    var urlMain = "https://newsapi.org/v2/everything?q=NASA&apiKey=BOOM&language=en&page="
     var currentlyLoading = false
     var doneLoading = false
+    var loadStatus = LoadStatus.ready(nextPage: 1)
     
-    ///Will ensure that when the user reaches the end of the page, the app will fetch the next page of news
-    func shouldLoadMoreData(currentItem: NewsListItem? = nil) -> Bool {
-        if currentlyLoading || doneLoading {
-            return false
-        }
-        ///Optional unwrapping - so if there is an item being handled then true
-        guard let currentItem = currentItem else {
-            return true
-        }
-        
-        ///When the user reaches the last 4 items or less then the new page of news will be laoded
-        for n in (newsListItems.count - 4)...(newsListItems.count-1) {
-            if n >= 0 && currentItem.uuid == newsListItems[n].uuid {
-                return true
-            }
-        }
-        return false
+    init() {
+        loadMoreArticles()
     }
     
     //LOOK INTO MORE AND LEARN
     ///Will get the position of the user in the newsListItems array
     subscript(position: Int) -> NewsListItem {
         return newsListItems[position]
-    }
-    
-    ///
-    init() {
-        loadMoreArticles()
     }
     
     ///Will load the articles with URLSession from the API and also prepare the next page to be loaded
@@ -57,83 +37,107 @@ class NewsFeed: ObservableObject, RandomAccessCollection {
         if !shouldLoadMoreData(currentItem: currentItem) {
             return
         }
-        currentlyLoading = true
-                
-        let urlString = ("\(urlMain)\(nextPageToLoad)")
+        guard case let .ready(page) = loadStatus else {
+            return
+        }
+        loadStatus = .loading(page: page)
+        let urlString = "\(urlMain)\(page)"
+        
         let url = URL(string: urlString)!
         let task = URLSession.shared.dataTask(with: url, completionHandler: parseArticlesFromResponse(data:response:error:))
         task.resume()
     }
     
-    func parseArticlesFromData(data: Data) -> [NewsListItem] {
-        let jsonObject = try! JSONSerialization.jsonObject(with: data)
-        let topLevelMap = jsonObject as! [String: Any]
-        
-        ///Checks the status of the API to ensure it is valid
-        guard topLevelMap["status"] as? String == "ok" else {
-            print("Bad status return")
-            return []
+    
+    ///Will ensure that when the user reaches the end of the page, the app will fetch the next page of news
+    func shouldLoadMoreData(currentItem: NewsListItem? = nil) -> Bool {
+        ///Optional unwrapping - so if there is an item being handled then true
+        guard let currentItem = currentItem else {
+            return true
         }
-        ///Gets an array of articles and notifies if nothing is returned
-        guard let jsonArticles = topLevelMap["articles"] as? [[String: Any]] else {
-            print("Nothing found")
-            return []
-        }
-        
-        ///Grabs the title and author from the JSON
-        var newArticles = [NewsListItem]()
-        for jsonArticle in jsonArticles {
-            guard let title = jsonArticle["title"] as? String else {
-                continue
+        ///Ensure that when the user reaches the last 6 items or less, the next page will load
+        for n in (newsListItems.count - 6)...(newsListItems.count-1) {
+            if n >= 0 && currentItem.uuid == newsListItems[n].uuid {
+                return true
             }
-            guard let author = jsonArticle["author"] as? String else {
-                continue
-            }
-            ///Both items above are then added to the newArticles
-            newArticles.append(NewsListItem(title: title, author: author))
         }
-        return newArticles
+        return false
     }
     
-    ///Will parse the JSON
+    ///Will parse the JSON and will throw errors if anything unusual occuers
     func parseArticlesFromResponse(data: Data?, response: URLResponse?, error: Error?) {
+        ///If no error then bypass. Error displayed and change of loadStatus to prevent loading
         guard error == nil else {
             print("Error: \(error!)")
-            currentlyLoading = false
-
+            loadStatus = .parseError
+            return
+        }
+        ///If data exists then bypass. Error displayed if not and loadStatus changed to prevent loading
+        guard let data = data else {
+            print("No data found")
+            loadStatus = .parseError
             return
         }
         
-        guard let data = data else {
-            print("No data cap'n")
-            currentlyLoading = false
-            return
-        }
         ///The main thread will add the new articles gained from the parseArcticlesFromData func
         ///Will also increment the pageNumber once the first once has been loaded to ensure next page loads
         ///If valid JSON returned then but no articles then doneLoading more data in
         let newArticles = parseArticlesFromData(data: data)
         DispatchQueue.main.async {
             self.newsListItems.append(contentsOf: newArticles)
-            self.nextPageToLoad += 1
-            self.currentlyLoading = false
-            self.doneLoading = (newArticles.count == 0)
-
+            if newArticles.count == 0 {
+                self.loadStatus = .done
+            } else {
+                guard case let .loading(page) = self.loadStatus else {
+                    fatalError("Issue with loadStatus and loading new pages")
+                }
+                self.loadStatus = .ready(nextPage: page + 1)
+            }
         }
-        
+    }
+    
+    ///Parses the different articles from the API
+    func parseArticlesFromData(data: Data) -> [NewsListItem] {
+        var response: NewsAPIResponse
+        do {
+            ///Decodes the response through the NewsAPIResponse class
+            response = try JSONDecoder().decode(NewsAPIResponse.self, from: data)
+        } catch {
+            print("Parsing error: \(error)")
+            return []
+        }
+        ///If there's an issue with the API (url/service issue) then it will be caught here
+        if response.status != "ok" {
+            print("Status issue: \(response.status)")
+            return []
+        }
+        ///Returns the articles from the URL else an  empty array
+        return response.articles ?? []
+    }
+    
+    ///Enum for the different states when loading/not loading and if there's an issue with parsing the JSON
+    enum LoadStatus {
+        case ready (nextPage: Int)
+        case loading (page: Int)
+        case parseError
+        case done
     }
 }
-    
-    class NewsListItem: Identifiable, Codable {
-        
-        //MARK: - Properties
-        var uuid = UUID()
-        var author: String
-        var title: String
-        
-        init(title: String, author: String) {
-            self.title = title
-            self.author = author
-        }
-    }
 
+class NewsAPIResponse: Codable {
+    var status: String
+    var articles: [NewsListItem]?
+}
+
+class NewsListItem: Identifiable, Codable {
+    var uuid = UUID()
+    
+    var author: String?
+    var title: String
+    var urlToImage: String?
+    var url: String
+    
+    enum CodingKeys: String, CodingKey {
+        case author, title, urlToImage, url
+    }
+}
