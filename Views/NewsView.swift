@@ -30,7 +30,7 @@ struct NewsItemView: View {
     
     var body: some View {
         HStack{
-            URLImageView()
+            URLImageView(urlString: article.urlToImage)
             VStack(alignment: .leading) {
                 Text("\(article.title)")
                     .font(.headline)
