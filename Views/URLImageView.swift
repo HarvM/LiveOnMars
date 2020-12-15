@@ -24,9 +24,3 @@ struct URLImageView: View {
     }
      static var placeholderNews = UIImage(named:"newsPlaceholder")
 }
-
-//struct URLImageView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        URLImageView(urlString: article.urlString)
-//    }
-//}

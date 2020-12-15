@@ -13,29 +13,20 @@ struct NewsView: View {
     //MARK: - Properties
     @ObservedObject var newsFeed = NewsFeed()
     
-    //MARK: - View
+    //Body of the view
     var body: some View {
-        List(newsFeed) {
-            (article: NewsListItem) in
-            NewsItemView(article: article)
-                .onAppear {
-                    self.newsFeed.loadMoreArticles(currentItem: article)
+        NavigationView {
+            List {
+                ForEach (newsFeed, id: \.uuid) {
+                    article in
+                    VStack {
+                        NewsItemView(article:article)
+                            .onAppear {
+                                self.newsFeed.loadMoreArticles(currentItem: article)
+                            }
+                        NavigationLink("", destination: ArticleView(articleToBeDisplayed: article))
+                    }
                 }
-        }
-    }
-}
-
-struct NewsItemView: View {
-    var article: NewsListItem
-    
-    var body: some View {
-        HStack{
-            URLImageView(urlString: article.urlToImage)
-            VStack(alignment: .leading) {
-                Text("\(article.title)")
-                    .font(.headline)
-                Text("\(article.author ?? "No author found")")
-                    .font(.subheadline)
             }
         }
     }
