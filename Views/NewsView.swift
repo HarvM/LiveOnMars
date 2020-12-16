@@ -13,20 +13,25 @@ struct NewsView: View {
     //MARK: - Properties
     @ObservedObject var newsFeed = NewsFeed()
     
-    //Body of the view
+    //MARK: - Body of the view
     var body: some View {
         NavigationView {
             List {
                 ForEach (newsFeed, id: \.uuid) {
                     article in
-                    VStack {
+                    HStack {
                         NewsItemView(article:article)
                             .onAppear {
                                 self.newsFeed.loadMoreArticles(currentItem: article)
                             }
                         NavigationLink("", destination: ArticleView(articleToBeDisplayed: article))
                     }
-                }
+                    .clipped()
+                    .frame(minWidth: 650, idealWidth: 700, maxWidth: 750, minHeight: 50, idealHeight: 65, maxHeight: 85, alignment: .leading)
+                    .padding(15)
+                    
+                } .navigationTitle("NASA News")
+                .font(.headline)
             }
         }
     }

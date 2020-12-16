@@ -199,8 +199,8 @@
 				49031B2325091A3A00EA084D /* NewsView.swift */,
 				49FED0D32550D0D90012B978 /* URLImageView.swift */,
 				491AD09B257F1E5F006151E8 /* ArticleView.swift */,
-				49031AFA250804AD00EA084D /* ContentView.swift */,
 				4943AF37257DC02200AEB63F /* NewsItemView.swift */,
+				49031AFA250804AD00EA084D /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

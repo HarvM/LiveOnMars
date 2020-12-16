@@ -19,12 +19,16 @@ struct NewsItemView: View {
             URLImageView(urlString: article.urlToImage)
             VStack(alignment: .leading) {
                 Text("\(article.title)")
-                    .font(.headline)
-                    .padding(2)
-                Text("\(article.author ?? "No author found")")
                     .font(.subheadline)
+                    .padding(2)
+                    .allowsTightening(true)
+                    .minimumScaleFactor(0.9)
+                    .lineLimit(2)
+                Text("\(article.author ?? "No author found")")
+                    .font(.caption2)
                     .foregroundColor(.gray)
             }
+            .frame(height: 400)
         }
     }
 }
