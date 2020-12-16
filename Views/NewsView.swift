@@ -27,7 +27,7 @@ struct NewsView: View {
                         NavigationLink("", destination: ArticleView(articleToBeDisplayed: article))
                     }
                     .clipped()
-                    .frame(minWidth: 650, idealWidth: 700, maxWidth: 750, minHeight: 50, idealHeight: 65, maxHeight: 85, alignment: .leading)
+                    .frame(minWidth: 700, idealWidth: 780, maxWidth: 800, minHeight: 50, idealHeight: 65, maxHeight: 85, alignment: .leading)
                     .padding(15)
                     
                 } .navigationTitle("NASA News")

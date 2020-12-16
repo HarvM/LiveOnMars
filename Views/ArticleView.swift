@@ -10,27 +10,16 @@ import SwiftUI
 
 struct ArticleView: View {
     
-    @Environment(\.managedObjectContext) var managedObjectContext
-    @Environment(\.presentationMode) var presentationMode
+    //MARK: - Properties
+    @ObservedObject var webViewStateModel: WebViewStateModel = WebViewStateModel()
     let articleToBeDisplayed: NewsListItem
-    //    let photoToBeDisplayed: ImageModel
     
-    //    URLImageView(urlString: article.urlToImage)
-    
+    //MARK: Body of the view
     var body: some View {
-        HStack{
-            Text(" Article written by: \(articleToBeDisplayed.author ?? "nothing")")
-        }
         VStack{
-            //            Image("\(String(describing: articleToBeDisplayed))")
-            Text("\(articleToBeDisplayed.articleDescription ?? "nothing")")
-                .multilineTextAlignment(.center)
-                .frame(minWidth: 400, idealWidth: 500, maxWidth: 525, minHeight: 600, idealHeight: 650, maxHeight: 700, alignment: .center)
+            ///WebView that displays the corresponding aricle that the user has clicked on
+            WebView(url: URL.init(string: "\(articleToBeDisplayed.url)")!, webViewStateModel: self.webViewStateModel)
         }
-        .navigationTitle("\(articleToBeDisplayed.title )")
-        .allowsTightening(true)
-        .font(.footnote)
-        .minimumScaleFactor(0.5)
     }
 }
 

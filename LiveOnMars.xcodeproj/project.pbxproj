@@ -21,6 +21,9 @@
 		4943AF27257DAD1B00AEB63F /* MarsImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4943AF26257DAD1B00AEB63F /* MarsImageModel.swift */; };
 		4943AF2D257DB01A00AEB63F /* MarsImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4943AF2C257DB01A00AEB63F /* MarsImageItem.swift */; };
 		4943AF38257DC02200AEB63F /* NewsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4943AF37257DC02200AEB63F /* NewsItemView.swift */; };
+		494E9706258A6E8000BC14F9 /* WebViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E9705258A6E8000BC14F9 /* WebViewWrapper.swift */; };
+		494E970B258A799100BC14F9 /* WebViewStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E970A258A799100BC14F9 /* WebViewStateModel.swift */; };
+		494E9713258A79C200BC14F9 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E9712258A79C200BC14F9 /* WebView.swift */; };
 		495EA3D925522C6200916474 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495EA3D825522C6200916474 /* ImageModel.swift */; };
 		499F163B254CF11F00561450 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499F163A254CF11F00561450 /* NewsModel.swift */; };
 		49A2BF43255349340047384B /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2BF42255349340047384B /* ImageCache.swift */; };
@@ -72,6 +75,9 @@
 		4943AF26257DAD1B00AEB63F /* MarsImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsImageModel.swift; sourceTree = "<group>"; };
 		4943AF2C257DB01A00AEB63F /* MarsImageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsImageItem.swift; sourceTree = "<group>"; };
 		4943AF37257DC02200AEB63F /* NewsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemView.swift; sourceTree = "<group>"; };
+		494E9705258A6E8000BC14F9 /* WebViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewWrapper.swift; sourceTree = "<group>"; };
+		494E970A258A799100BC14F9 /* WebViewStateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewStateModel.swift; sourceTree = SOURCE_ROOT; };
+		494E9712258A79C200BC14F9 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		495EA3D825522C6200916474 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		499F163A254CF11F00561450 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		49A2BF42255349340047384B /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
@@ -131,6 +137,7 @@
 		49031AEC250804AC00EA084D = {
 			isa = PBXGroup;
 			children = (
+				494E96FC258A6DDF00BC14F9 /* WebView */,
 				4943AF2B257DAFA100AEB63F /* ImageNetworking */,
 				49A2BF5425534A3E0047384B /* NetworkingImages */,
 				49FED0D82550D34D0012B978 /* Assets */,
@@ -212,6 +219,16 @@
 				4943AF2C257DB01A00AEB63F /* MarsImageItem.swift */,
 			);
 			path = ImageNetworking;
+			sourceTree = "<group>";
+		};
+		494E96FC258A6DDF00BC14F9 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				494E970A258A799100BC14F9 /* WebViewStateModel.swift */,
+				494E9705258A6E8000BC14F9 /* WebViewWrapper.swift */,
+				494E9712258A79C200BC14F9 /* WebView.swift */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 		499F1639254CF0FB00561450 /* Networking News */ = {
@@ -455,6 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494E970B258A799100BC14F9 /* WebViewStateModel.swift in Sources */,
 				49031B2425091A3A00EA084D /* NewsView.swift in Sources */,
 				49031AFB250804AD00EA084D /* ContentView.swift in Sources */,
 				49A2BF43255349340047384B /* ImageCache.swift in Sources */,
@@ -463,7 +481,9 @@
 				491AD09C257F1E5F006151E8 /* ArticleView.swift in Sources */,
 				49A2BF4D255349EE0047384B /* NewsListItem.swift in Sources */,
 				4943AF27257DAD1B00AEB63F /* MarsImageModel.swift in Sources */,
+				494E9706258A6E8000BC14F9 /* WebViewWrapper.swift in Sources */,
 				499F163B254CF11F00561450 /* NewsModel.swift in Sources */,
+				494E9713258A79C200BC14F9 /* WebView.swift in Sources */,
 				49031AF9250804AD00EA084D /* LiveOnMarsApp.swift in Sources */,
 				49031B2625091AB200EA084D /* PhotoView.swift in Sources */,
 				495EA3D925522C6200916474 /* ImageModel.swift in Sources */,
