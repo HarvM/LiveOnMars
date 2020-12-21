@@ -8,6 +8,7 @@
 import SwiftUI
 
 class ImageCache {
+    
     var cache = NSCache<NSString, UIImage>()
     
     func get(forKey: String) -> UIImage? {

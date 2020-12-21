@@ -33,7 +33,6 @@ struct WebView: View {
     }
     
     init(urlRequest: URLRequest, webViewStateModel: WebViewStateModel, onNavigationAction: ((_ navigationAction: WebView.NavigationAction) -> Void)?) {
-        
         self.urlRequest = urlRequest
         self.webViewStateModel = webViewStateModel
         self.actionDelegate = onNavigationAction

@@ -22,7 +22,9 @@ struct NewsView: View {
                     HStack {
                         NewsItemView(article:article)
                             .onAppear {
+                                DispatchQueue.main.async {
                                 self.newsFeed.loadMoreArticles(currentItem: article)
+                                }
                             }
                         NavigationLink("", destination: ArticleView(articleToBeDisplayed: article))
                     }
