@@ -11,8 +11,8 @@ One place for checking on any relevent news on NASA or having a look at some ama
 
 ## Table of contents
 * [General info](#general-info)
-* [Technologies](#technologies)
 * [Features](#features)
+* [Future Features](#FutureFeatures)
 * [Status](#status)
 * [Inspiration](#inspiration)
 * [Contact](#contact)
@@ -25,6 +25,9 @@ I wanted more practice integrating third party APIs into some of my work and spe
 
 ## Future Features
 * Photos being displayed from a NASA API
+
+## Status
+* Still in development
 
 ## Inspiration
 Space is mind blowingly interesting and should really put everything we worry about here in perspective. But here we are arguing over inane nonsense instead
