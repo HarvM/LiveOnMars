@@ -1,9 +1,10 @@
-# Needed API Keys:
-To generate a key for NewsAPI: https://newsapi.org
-To generate a key for the NASA API: https://api.nasa.gov
 
 # LiveOnMars
 One place for checking on any relevent news on NASA or having a look at some amazing photography
+
+## API Keys:
+To generate a key for NewsAPI: https://newsapi.org
+To generate a key for the NASA API: https://api.nasa.gov
 
 ## Screenshots
 ![Screenshots](NewsMain.png) &ensp;
