@@ -34,4 +34,4 @@ I wanted more practice integrating third party APIs into some of my work and spe
 Space is mind blowingly interesting and should really put everything we worry about here in perspective. But here we are arguing over inane nonsense instead
 
 ## Contact
-Created by [Marc Harvey](www.linkedin.com/in/marc-harvey-lru) - feel free to contact me!
+Created by [Marc Harvey](https://www.linkedin.com/in/marc-harvey-lru/) - feel free to contact me!
