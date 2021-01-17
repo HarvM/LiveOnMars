@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,11 +18,6 @@
 		49031B2425091A3A00EA084D /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49031B2325091A3A00EA084D /* NewsView.swift */; };
 		49031B2625091AB200EA084D /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49031B2525091AB200EA084D /* PhotoView.swift */; };
 		491AD09C257F1E5F006151E8 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491AD09B257F1E5F006151E8 /* ArticleView.swift */; };
-		49322911258C07F000601CEC /* NASAImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49322910258C07F000601CEC /* NASAImageView.swift */; };
-		49322920258C276100601CEC /* PhotoAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932291F258C276100601CEC /* PhotoAPIResponse.swift */; };
-		4932293D258C3B5600601CEC /* DisplayPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932293C258C3B5600601CEC /* DisplayPhotosView.swift */; };
-		4943AF27257DAD1B00AEB63F /* MarsImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4943AF26257DAD1B00AEB63F /* MarsImageModel.swift */; };
-		4943AF2D257DB01A00AEB63F /* MarsImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4943AF2C257DB01A00AEB63F /* MarsImageItem.swift */; };
 		4943AF38257DC02200AEB63F /* NewsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4943AF37257DC02200AEB63F /* NewsItemView.swift */; };
 		494E9706258A6E8000BC14F9 /* WebViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E9705258A6E8000BC14F9 /* WebViewWrapper.swift */; };
 		494E970B258A799100BC14F9 /* WebViewStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E970A258A799100BC14F9 /* WebViewStateModel.swift */; };
@@ -32,6 +27,10 @@
 		49A2BF43255349340047384B /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2BF42255349340047384B /* ImageCache.swift */; };
 		49A2BF48255349CC0047384B /* NewsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2BF47255349CC0047384B /* NewsAPIResponse.swift */; };
 		49A2BF4D255349EE0047384B /* NewsListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2BF4C255349EE0047384B /* NewsListItem.swift */; };
+		49F4151425B4786A0011B2E5 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 49F4151325B4786A0011B2E5 /* SDWebImageSwiftUI */; };
+		49F4154F25B4DC350011B2E5 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4154E25B4DC350011B2E5 /* Welcome.swift */; };
+		49F4155525B4DE320011B2E5 /* MarsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4155425B4DE320011B2E5 /* MarsDataModel.swift */; };
+		49F4155D25B4DEB00011B2E5 /* DisplayPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4155C25B4DEB00011B2E5 /* DisplayPhotoView.swift */; };
 		49FED0D42550D0D90012B978 /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FED0D32550D0D90012B978 /* URLImageView.swift */; };
 		49FED0DA2550D3940012B978 /* newsPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 49FED0D92550D3940012B978 /* newsPlaceholder.png */; };
 		49FED0DB2550D3940012B978 /* newsPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 49FED0D92550D3940012B978 /* newsPlaceholder.png */; };
@@ -75,11 +74,6 @@
 		49031B2325091A3A00EA084D /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		49031B2525091AB200EA084D /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		491AD09B257F1E5F006151E8 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
-		49322910258C07F000601CEC /* NASAImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAImageView.swift; sourceTree = "<group>"; };
-		4932291F258C276100601CEC /* PhotoAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAPIResponse.swift; sourceTree = "<group>"; };
-		4932293C258C3B5600601CEC /* DisplayPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayPhotosView.swift; sourceTree = "<group>"; };
-		4943AF26257DAD1B00AEB63F /* MarsImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsImageModel.swift; sourceTree = "<group>"; };
-		4943AF2C257DB01A00AEB63F /* MarsImageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsImageItem.swift; sourceTree = "<group>"; };
 		4943AF37257DC02200AEB63F /* NewsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemView.swift; sourceTree = "<group>"; };
 		494E9705258A6E8000BC14F9 /* WebViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewWrapper.swift; sourceTree = "<group>"; };
 		494E970A258A799100BC14F9 /* WebViewStateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewStateModel.swift; sourceTree = SOURCE_ROOT; };
@@ -89,6 +83,9 @@
 		49A2BF42255349340047384B /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		49A2BF47255349CC0047384B /* NewsAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIResponse.swift; sourceTree = "<group>"; };
 		49A2BF4C255349EE0047384B /* NewsListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListItem.swift; sourceTree = "<group>"; };
+		49F4154E25B4DC350011B2E5 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		49F4155425B4DE320011B2E5 /* MarsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsDataModel.swift; sourceTree = "<group>"; };
+		49F4155C25B4DEB00011B2E5 /* DisplayPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayPhotoView.swift; sourceTree = "<group>"; };
 		49FED0D32550D0D90012B978 /* URLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageView.swift; sourceTree = "<group>"; };
 		49FED0D92550D3940012B978 /* newsPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newsPlaceholder.png; sourceTree = "<group>"; };
 		A60510A35750C51922D89F9F /* libPods-LiveOnMars-LiveOnMarsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveOnMars-LiveOnMarsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F4151425B4786A0011B2E5 /* SDWebImageSwiftUI in Frameworks */,
 				14E5CAC02045202457962C4D /* libPods-LiveOnMars.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,9 +141,9 @@
 		49031AEC250804AC00EA084D = {
 			isa = PBXGroup;
 			children = (
+				49F4155325B4DE010011B2E5 /* NasaAPI */,
 				49FED0D82550D34D0012B978 /* Assets */,
 				494E96FC258A6DDF00BC14F9 /* WebView */,
-				4943AF2B257DAFA100AEB63F /* ImageNetworking */,
 				49A2BF5425534A3E0047384B /* NetworkingImages */,
 				499F1639254CF0FB00561450 /* Network */,
 				49031B2725091ABC00EA084D /* Views */,
@@ -230,20 +228,9 @@
 			isa = PBXGroup;
 			children = (
 				49031B2525091AB200EA084D /* PhotoView.swift */,
-				4932293C258C3B5600601CEC /* DisplayPhotosView.swift */,
-				49322910258C07F000601CEC /* NASAImageView.swift */,
+				49F4155C25B4DEB00011B2E5 /* DisplayPhotoView.swift */,
 			);
 			path = "NASA ImageViews";
-			sourceTree = "<group>";
-		};
-		4943AF2B257DAFA100AEB63F /* ImageNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				4932291F258C276100601CEC /* PhotoAPIResponse.swift */,
-				4943AF2C257DB01A00AEB63F /* MarsImageItem.swift */,
-				4943AF26257DAD1B00AEB63F /* MarsImageModel.swift */,
-			);
-			path = ImageNetworking;
 			sourceTree = "<group>";
 		};
 		494E96FC258A6DDF00BC14F9 /* WebView */ = {
@@ -273,6 +260,15 @@
 				495EA3D825522C6200916474 /* ImageModel.swift */,
 			);
 			path = NetworkingImages;
+			sourceTree = "<group>";
+		};
+		49F4155325B4DE010011B2E5 /* NasaAPI */ = {
+			isa = PBXGroup;
+			children = (
+				49F4155425B4DE320011B2E5 /* MarsDataModel.swift */,
+				49F4154E25B4DC350011B2E5 /* Welcome.swift */,
+			);
+			path = NasaAPI;
 			sourceTree = "<group>";
 		};
 		49FED0D82550D34D0012B978 /* Assets */ = {
@@ -310,6 +306,9 @@
 			dependencies = (
 			);
 			name = LiveOnMars;
+			packageProductDependencies = (
+				49F4151325B4786A0011B2E5 /* SDWebImageSwiftUI */,
+			);
 			productName = LiveOnMars;
 			productReference = 49031AF5250804AD00EA084D /* LiveOnMars.app */;
 			productType = "com.apple.product-type.application";
@@ -383,6 +382,9 @@
 				Base,
 			);
 			mainGroup = 49031AEC250804AC00EA084D;
+			packageReferences = (
+				49F4151225B4786A0011B2E5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 49031AF6250804AD00EA084D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -497,26 +499,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4932293D258C3B5600601CEC /* DisplayPhotosView.swift in Sources */,
 				494E970B258A799100BC14F9 /* WebViewStateModel.swift in Sources */,
-				49322920258C276100601CEC /* PhotoAPIResponse.swift in Sources */,
 				49031B2425091A3A00EA084D /* NewsView.swift in Sources */,
 				49031AFB250804AD00EA084D /* ContentView.swift in Sources */,
 				49A2BF43255349340047384B /* ImageCache.swift in Sources */,
+				49F4154F25B4DC350011B2E5 /* Welcome.swift in Sources */,
 				49A2BF48255349CC0047384B /* NewsAPIResponse.swift in Sources */,
 				49FED0D42550D0D90012B978 /* URLImageView.swift in Sources */,
 				491AD09C257F1E5F006151E8 /* ArticleView.swift in Sources */,
+				49F4155525B4DE320011B2E5 /* MarsDataModel.swift in Sources */,
 				49A2BF4D255349EE0047384B /* NewsListItem.swift in Sources */,
-				4943AF27257DAD1B00AEB63F /* MarsImageModel.swift in Sources */,
 				494E9706258A6E8000BC14F9 /* WebViewWrapper.swift in Sources */,
 				499F163B254CF11F00561450 /* NewsModel.swift in Sources */,
-				49322911258C07F000601CEC /* NASAImageView.swift in Sources */,
 				494E9713258A79C200BC14F9 /* WebView.swift in Sources */,
 				49031AF9250804AD00EA084D /* LiveOnMarsApp.swift in Sources */,
 				49031B2625091AB200EA084D /* PhotoView.swift in Sources */,
 				495EA3D925522C6200916474 /* ImageModel.swift in Sources */,
+				49F4155D25B4DEB00011B2E5 /* DisplayPhotoView.swift in Sources */,
 				4943AF38257DC02200AEB63F /* NewsItemView.swift in Sources */,
-				4943AF2D257DB01A00AEB63F /* MarsImageItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -842,6 +842,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		49F4151225B4786A0011B2E5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		49F4151325B4786A0011B2E5 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49F4151225B4786A0011B2E5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 49031AED250804AC00EA084D /* Project object */;
 }

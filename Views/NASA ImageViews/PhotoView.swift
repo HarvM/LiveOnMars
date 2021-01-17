@@ -6,31 +6,27 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
-//MARK: - PhotoView Struct
+//Main view for displaying the JSON pulled from the NASA API
 struct PhotoView: View {
     
-    @ObservedObject var imageFeed = ImageFeed()
+    //MARK: - Properties
+    @ObservedObject var getData = MarsDataModel()
     
+    //MARK: - Body of View
     var body: some View {
         NavigationView {
-            List {
-                ForEach (imageFeed, id: \.id) {
-                    photoFeed in
-                    VStack {
-                        DisplayPhotosView(photoFeed: photoFeed)
-                    }
-                }
-                .padding()
-            }
+            List(getData.jsonData) { i in
+                DisplayPhotoView(imgSrc: i.imgSrc!)
+            } .navigationBarTitle("Live on Mars")
         }
     }
     
     
-    //    struct PhotoView_Previews: PreviewProvider {
-    //        static var previews: some View {
-    //            PhotoView(nasaImage: Photo)
-    //        }
-    //    }
-    
+    struct PhotoView_Previews: PreviewProvider {
+        static var previews: some View {
+            PhotoView()
+        }
+    }
 }

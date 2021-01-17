@@ -1,22 +1,21 @@
 //
-//  MarsImageItem.swift
+//  Welcome.swift
 //  LiveOnMars
 //
-//  Created by Marc Harvey on 07/12/2020.
+//  Created by Marc Harvey on 17/01/2021.
 //
 
 import Foundation
 
-class Welcome: Identifiable, Codable {
-    var photos: [Photo]?
+//Generated using Paste JSON as Code
 
-    init(photos: [Photo]?) {
-        self.photos = photos
-    }
+// MARK: - Welcome
+struct Welcome: Codable {
+    var photos: [Photo]?
 }
 
 // MARK: - Photo
-class Photo: Identifiable, Codable {
+struct Photo: Codable, Identifiable {
     var id, sol: Int?
     var camera: Camera?
     var imgSrc: String?
@@ -29,19 +28,10 @@ class Photo: Identifiable, Codable {
         case earthDate = "earth_date"
         case rover
     }
-    
-    init(id: Int?, sol: Int?, camera: Camera?, imgSrc: String?, earthDate: String?, rover: Rover?) {
-        self.id = id
-        self.sol = sol
-        self.camera = camera
-        self.imgSrc = imgSrc
-        self.earthDate = earthDate
-        self.rover = rover
-    }
 }
 
 // MARK: - Camera
-class Camera: Codable {
+struct Camera: Codable {
     var id: Int?
     var name: CameraName?
     var roverID: Int?
@@ -51,13 +41,6 @@ class Camera: Codable {
         case id, name
         case roverID = "rover_id"
         case fullName = "full_name"
-    }
-
-    init(id: Int?, name: CameraName?, roverID: Int?, fullName: FullName?) {
-        self.id = id
-        self.name = name
-        self.roverID = roverID
-        self.fullName = fullName
     }
 }
 
@@ -70,7 +53,7 @@ enum CameraName: String, Codable {
 }
 
 // MARK: - Rover
-class Rover: Codable {
+struct Rover: Codable {
     var id: Int?
     var name: RoverName?
     var landingDate, launchDate: String?
@@ -81,14 +64,6 @@ class Rover: Codable {
         case landingDate = "landing_date"
         case launchDate = "launch_date"
         case status
-    }
-
-    init(id: Int?, name: RoverName?, landingDate: String?, launchDate: String?, status: Status?) {
-        self.id = id
-        self.name = name
-        self.landingDate = landingDate
-        self.launchDate = launchDate
-        self.status = status
     }
 }
 
