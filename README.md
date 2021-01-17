@@ -2,8 +2,8 @@
 One place for checking on any relevent news on NASA or having a look at some amazing photography
 
 ## API Keys
-<a href="https://newsapi.org">NewsAPI Key Here</a> <p>
-<a href="https://api.nasa.gov">NASA API Key Here</a>
+<a href="https://newsapi.org">NewsAPI Key</a> <p>
+<a href="https://api.nasa.gov">NASA API Key</a>
 
 ## Screenshots
 ![Screenshots](NewsMain.png) &ensp;
