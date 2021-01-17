@@ -30,7 +30,7 @@ I wanted more practice integrating third party APIs into some of my work and spe
 * Still in development
 
 ## Special Thanks
-<a href="https://github.com/SDWebImage/SDWebImageSwiftUI">SDWebImage</a> - For enabling a simpler way of parsing JSON with SwiftUI
+<a href="https://github.com/SDWebImage/SDWebImageSwiftUI">SDWebImage</a> - For enabling a simpler way of parsing images held on JSON with SwiftUI
 
 ## Contact
 Created by [Marc Harvey](https://www.linkedin.com/in/marc-harvey-lru/) - feel free to contact me!
