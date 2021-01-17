@@ -1,5 +1,5 @@
 # LiveOnMars
-One place for checking on any relevent news on NASA or having a look at some amazing photography
+One place for checking on any relevent news on NASA or having a look at some amazing photography from the Martian Rovers
 
 ## API Keys
 <a href="https://newsapi.org">NewsAPI Key</a> <p>
@@ -22,9 +22,10 @@ I wanted more practice integrating third party APIs into some of my work and spe
 
 ## Features
 * A news feed pulling all relevant news about NASA using NewsAPI.org. All articles are displayed within a List and from said list a user can read the full article in a WebView
+* Another feed from a NASA API that displays some images taken from the Martian Rovers
 
 ## Future Features
-* Photos being displayed from a NASA API
+Allow the user to define the date/Rover/camera that they see in their feed. Should just be a case of interpolating the URL that's being used and letting the user alter the different parts of the URL accordingly. In terms of UI, I think that maybe using a Picker to allow this
 
 ## Status
 * Still in development
