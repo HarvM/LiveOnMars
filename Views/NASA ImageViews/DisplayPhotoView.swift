@@ -16,12 +16,15 @@ struct DisplayPhotoView: View {
     
     //MARK: - Body of the view
     var body: some View {
-        VStack(alignment: .leading , spacing: 10) {
-            ///Need to add caching here
+        VStack(spacing: 10) {
+            ///Super basic right now but will look into getting this into a LazyVGrid shortly
             AnimatedImage(url: URL(string: imgSrc))
                 .resizable()
-                .frame(width: 100, height: 100)
-                .clipShape(Circle())
+                .indicator(SDWebImageActivityIndicator.medium)
+                .scaledToFit()
+                .frame(width: 350, height: 200, alignment: .center)
+                
+//                .clipShape(Circle())
             ///Need to adjust how the images are displayed - just to make it better looking
             ///Maybe add some details about the image too to give it some context
         }
