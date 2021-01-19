@@ -16,7 +16,9 @@ struct URLImageView: View {
         imageModel = ImageModel(urlString: urlString)
     }
     
+    //MARK: - Body of the View
     var body: some View {
+        ///Will either display the image pulled from the JSON or display the placeholder image should the article not have one
         Image(uiImage: imageModel.finalImage ?? URLImageView.placeholderNews!)
             .resizable()
             .scaledToFit()

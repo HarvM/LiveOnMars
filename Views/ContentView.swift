@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
         
+    //MARK: - Body of the view
     var body: some View {
         ///TabView Setup
         TabView {

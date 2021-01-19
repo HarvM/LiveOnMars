@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//Cache built for the NewsView and specificially the images held for each of the articles
 class ImageCache {
     
     var cache = NSCache<NSString, UIImage>()

@@ -31,6 +31,7 @@
 		49F4154F25B4DC350011B2E5 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4154E25B4DC350011B2E5 /* Welcome.swift */; };
 		49F4155525B4DE320011B2E5 /* MarsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4155425B4DE320011B2E5 /* MarsDataModel.swift */; };
 		49F4155D25B4DEB00011B2E5 /* DisplayPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4155C25B4DEB00011B2E5 /* DisplayPhotoView.swift */; };
+		49F415DA25B75AB30011B2E5 /* nasaLogo in Resources */ = {isa = PBXBuildFile; fileRef = 49F415D925B75AB30011B2E5 /* nasaLogo */; };
 		49FED0D42550D0D90012B978 /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FED0D32550D0D90012B978 /* URLImageView.swift */; };
 		49FED0DA2550D3940012B978 /* newsPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 49FED0D92550D3940012B978 /* newsPlaceholder.png */; };
 		49FED0DB2550D3940012B978 /* newsPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 49FED0D92550D3940012B978 /* newsPlaceholder.png */; };
@@ -86,6 +87,7 @@
 		49F4154E25B4DC350011B2E5 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		49F4155425B4DE320011B2E5 /* MarsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsDataModel.swift; sourceTree = "<group>"; };
 		49F4155C25B4DEB00011B2E5 /* DisplayPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayPhotoView.swift; sourceTree = "<group>"; };
+		49F415D925B75AB30011B2E5 /* nasaLogo */ = {isa = PBXFileReference; lastKnownFileType = file; path = nasaLogo; sourceTree = "<group>"; };
 		49FED0D32550D0D90012B978 /* URLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageView.swift; sourceTree = "<group>"; };
 		49FED0D92550D3940012B978 /* newsPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newsPlaceholder.png; sourceTree = "<group>"; };
 		A60510A35750C51922D89F9F /* libPods-LiveOnMars-LiveOnMarsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveOnMars-LiveOnMarsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -275,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				49FED0D92550D3940012B978 /* newsPlaceholder.png */,
+				49F415D925B75AB30011B2E5 /* nasaLogo */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F415DA25B75AB30011B2E5 /* nasaLogo in Resources */,
 				49031B00250804AD00EA084D /* Preview Assets.xcassets in Resources */,
 				49031AFD250804AD00EA084D /* Assets.xcassets in Resources */,
 				49FED0DA2550D3940012B978 /* newsPlaceholder.png in Resources */,

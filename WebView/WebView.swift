@@ -8,6 +8,7 @@
 import SwiftUI
 import WebKit
 
+///The view itself that displays the WebPage. Is called in ArticleView
 struct WebView: View {
     
     //MARK: - Enum

@@ -8,7 +8,7 @@
 import Foundation
 
 class WebViewStateModel: ObservableObject {
-    ///The three Bool states
+    ///The three Bool states that the web page can exist in and placeholder title
     @Published var pageTitle: String = "Web View"
     @Published var loading: Bool = false
     @Published var canGoBack: Bool = false

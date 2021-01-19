@@ -8,7 +8,8 @@
 import WebKit
 import SwiftUI
 
-final class WebViewWrapper : UIViewRepresentable {
+//In order to get the web page displayed and for SwiftUI, it has to be wrapped in UIViewRepresentable
+final class WebViewWrapper: UIViewRepresentable {
     
     //MARK: - Properties
     @ObservedObject var webViewStateModel: WebViewStateModel

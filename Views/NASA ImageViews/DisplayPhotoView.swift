@@ -13,20 +13,26 @@ struct DisplayPhotoView: View {
     
     //MARK: - Properties
     var imgSrc: String
+    var earthDate: String
+    var sol: Int
     
     //MARK: - Body of the view
     var body: some View {
-        VStack(spacing: 10) {
-            ///Super basic right now but will look into getting this into a LazyVGrid shortly
+        HStack(spacing: 20) {
+            ///Use of AnimatedImage from SDWebImageSwiftUI
             AnimatedImage(url: URL(string: imgSrc))
                 .resizable()
                 .indicator(SDWebImageActivityIndicator.medium)
-                .scaledToFit()
-                .frame(width: 350, height: 200, alignment: .center)
-                
-//                .clipShape(Circle())
-            ///Need to adjust how the images are displayed - just to make it better looking
-            ///Maybe add some details about the image too to give it some context
+                .frame(width: 150, height: 150, alignment: .leading)
+                .clipShape(Circle())
+                .overlay(
+                    Circle().stroke(Color.red, lineWidth: 0.5))
+            VStack{
+                Text("Date: \(earthDate)")
+                    .font(.headline)
+                Text("Sol date: \(sol)")
+                    .font(.subheadline)
+            }
         }
     }
 }
