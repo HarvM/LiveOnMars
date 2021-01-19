@@ -6,7 +6,7 @@ One place for checking on any relevent news on NASA or having a look at some ama
 <a href="https://api.nasa.gov">NASA API Key</a>
 
 ## Screenshots
-![Screenshots](Simulator Screen Shot - iPhone 12 Pro Max - 2021-01-19 at 22.15.52.png) &ensp;
+![Screenshots](MarsBasic.png) &ensp;
 ![Screenshots](NewsMain.png) &ensp;
 ![Screenshots](WebView.png) &ensp;
 
