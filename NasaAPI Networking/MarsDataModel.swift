@@ -31,7 +31,7 @@ class MarsDataModel: ObservableObject {
             }
             catch {
                 ///Error handling for both user and myself
-                Alert(title: Text("Sorry"), message: Text("There's been an issue getting the data from NASA"), dismissButton: .default(Text("Okay")))
+                Alert(title: Text("Sorry"), message: Text("There's been an issue getting the data from NASA - kinda cool"), dismissButton: .default(Text("Okay")))
                 print(error)
             }
         } .resume()

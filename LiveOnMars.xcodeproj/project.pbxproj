@@ -143,11 +143,11 @@
 		49031AEC250804AC00EA084D = {
 			isa = PBXGroup;
 			children = (
-				49F4155325B4DE010011B2E5 /* NasaAPI */,
+				49F4155325B4DE010011B2E5 /* NasaAPI Networking */,
 				49FED0D82550D34D0012B978 /* Assets */,
 				494E96FC258A6DDF00BC14F9 /* WebView */,
-				49A2BF5425534A3E0047384B /* NetworkingImages */,
-				499F1639254CF0FB00561450 /* Network */,
+				49A2BF5425534A3E0047384B /* ImageCaching */,
+				499F1639254CF0FB00561450 /* NewsAPI Networking */,
 				49031B2725091ABC00EA084D /* Views */,
 				49031AF7250804AD00EA084D /* LiveOnMars */,
 				49031B09250804AE00EA084D /* LiveOnMarsTests */,
@@ -245,32 +245,32 @@
 			path = WebView;
 			sourceTree = "<group>";
 		};
-		499F1639254CF0FB00561450 /* Network */ = {
+		499F1639254CF0FB00561450 /* NewsAPI Networking */ = {
 			isa = PBXGroup;
 			children = (
 				499F163A254CF11F00561450 /* NewsModel.swift */,
 				49A2BF4C255349EE0047384B /* NewsListItem.swift */,
 				49A2BF47255349CC0047384B /* NewsAPIResponse.swift */,
 			);
-			path = Network;
+			path = "NewsAPI Networking";
 			sourceTree = "<group>";
 		};
-		49A2BF5425534A3E0047384B /* NetworkingImages */ = {
+		49A2BF5425534A3E0047384B /* ImageCaching */ = {
 			isa = PBXGroup;
 			children = (
 				49A2BF42255349340047384B /* ImageCache.swift */,
 				495EA3D825522C6200916474 /* ImageModel.swift */,
 			);
-			path = NetworkingImages;
+			path = ImageCaching;
 			sourceTree = "<group>";
 		};
-		49F4155325B4DE010011B2E5 /* NasaAPI */ = {
+		49F4155325B4DE010011B2E5 /* NasaAPI Networking */ = {
 			isa = PBXGroup;
 			children = (
 				49F4155425B4DE320011B2E5 /* MarsDataModel.swift */,
 				49F4154E25B4DC350011B2E5 /* Welcome.swift */,
 			);
-			path = NasaAPI;
+			path = "NasaAPI Networking";
 			sourceTree = "<group>";
 		};
 		49FED0D82550D34D0012B978 /* Assets */ = {
