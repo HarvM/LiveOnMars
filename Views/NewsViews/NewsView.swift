@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Alamofire
+//import Alamofire
 
 struct NewsView: View {
     

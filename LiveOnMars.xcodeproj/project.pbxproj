@@ -27,6 +27,8 @@
 		49A2BF43255349340047384B /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2BF42255349340047384B /* ImageCache.swift */; };
 		49A2BF48255349CC0047384B /* NewsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2BF47255349CC0047384B /* NewsAPIResponse.swift */; };
 		49A2BF4D255349EE0047384B /* NewsListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2BF4C255349EE0047384B /* NewsListItem.swift */; };
+		49C3792E25BA116C00E18829 /* MarsAttacksDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3792D25BA116C00E18829 /* MarsAttacksDataModel.swift */; };
+		49DAC2BB25BA1284003A4844 /* MarsAttacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DAC2BA25BA1284003A4844 /* MarsAttacksView.swift */; };
 		49F4151425B4786A0011B2E5 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 49F4151325B4786A0011B2E5 /* SDWebImageSwiftUI */; };
 		49F4154F25B4DC350011B2E5 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4154E25B4DC350011B2E5 /* Welcome.swift */; };
 		49F4155525B4DE320011B2E5 /* MarsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4155425B4DE320011B2E5 /* MarsDataModel.swift */; };
@@ -84,6 +86,8 @@
 		49A2BF42255349340047384B /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		49A2BF47255349CC0047384B /* NewsAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIResponse.swift; sourceTree = "<group>"; };
 		49A2BF4C255349EE0047384B /* NewsListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListItem.swift; sourceTree = "<group>"; };
+		49C3792D25BA116C00E18829 /* MarsAttacksDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsAttacksDataModel.swift; sourceTree = "<group>"; };
+		49DAC2BA25BA1284003A4844 /* MarsAttacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsAttacksView.swift; sourceTree = "<group>"; };
 		49F4154E25B4DC350011B2E5 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		49F4155425B4DE320011B2E5 /* MarsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsDataModel.swift; sourceTree = "<group>"; };
 		49F4155C25B4DEB00011B2E5 /* DisplayPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayPhotoView.swift; sourceTree = "<group>"; };
@@ -231,6 +235,7 @@
 			children = (
 				49031B2525091AB200EA084D /* PhotoView.swift */,
 				49F4155C25B4DEB00011B2E5 /* DisplayPhotoView.swift */,
+				49DAC2BA25BA1284003A4844 /* MarsAttacksView.swift */,
 			);
 			path = "NASA ImageViews";
 			sourceTree = "<group>";
@@ -267,8 +272,9 @@
 		49F4155325B4DE010011B2E5 /* NasaAPI Networking */ = {
 			isa = PBXGroup;
 			children = (
-				49F4155425B4DE320011B2E5 /* MarsDataModel.swift */,
 				49F4154E25B4DC350011B2E5 /* Welcome.swift */,
+				49F4155425B4DE320011B2E5 /* MarsDataModel.swift */,
+				49C3792D25BA116C00E18829 /* MarsAttacksDataModel.swift */,
 			);
 			path = "NasaAPI Networking";
 			sourceTree = "<group>";
@@ -505,6 +511,7 @@
 			files = (
 				494E970B258A799100BC14F9 /* WebViewStateModel.swift in Sources */,
 				49031B2425091A3A00EA084D /* NewsView.swift in Sources */,
+				49C3792E25BA116C00E18829 /* MarsAttacksDataModel.swift in Sources */,
 				49031AFB250804AD00EA084D /* ContentView.swift in Sources */,
 				49A2BF43255349340047384B /* ImageCache.swift in Sources */,
 				49F4154F25B4DC350011B2E5 /* Welcome.swift in Sources */,
@@ -519,6 +526,7 @@
 				49031AF9250804AD00EA084D /* LiveOnMarsApp.swift in Sources */,
 				49031B2625091AB200EA084D /* PhotoView.swift in Sources */,
 				495EA3D925522C6200916474 /* ImageModel.swift in Sources */,
+				49DAC2BB25BA1284003A4844 /* MarsAttacksView.swift in Sources */,
 				49F4155D25B4DEB00011B2E5 /* DisplayPhotoView.swift in Sources */,
 				4943AF38257DC02200AEB63F /* NewsItemView.swift in Sources */,
 			);

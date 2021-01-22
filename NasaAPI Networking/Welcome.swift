@@ -9,6 +9,13 @@ import Foundation
 
 //Generated using Paste JSON as Code
 
+// This file was generated from JSON Schema using quicktype, do not modify it directly.
+// To parse the JSON, add this file to your project and do:
+//
+//   let welcome = try? newJSONDecoder().decode(Welcome.self, from: jsonData)
+
+import Foundation
+
 // MARK: - Welcome
 struct Welcome: Codable {
     var photos: [Photo]?
@@ -45,11 +52,19 @@ struct Camera: Codable {
 }
 
 enum FullName: String, Codable {
+    case frontHazardAvoidanceCamera = "Front Hazard Avoidance Camera"
+    case marsHandLensImager = "Mars Hand Lens Imager"
     case mastCamera = "Mast Camera"
+    case navigationCamera = "Navigation Camera"
+    case rearHazardAvoidanceCamera = "Rear Hazard Avoidance Camera"
 }
 
 enum CameraName: String, Codable {
+    case fhaz = "FHAZ"
+    case mahli = "MAHLI"
     case mast = "MAST"
+    case navcam = "NAVCAM"
+    case rhaz = "RHAZ"
 }
 
 // MARK: - Rover
