@@ -9,7 +9,7 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 ///View is displayed within the PhotoView
-struct DisplayPhotoView: View {
+struct DisplayMarsView: View {
     
     //MARK: - Properties
     var imgSrc: String

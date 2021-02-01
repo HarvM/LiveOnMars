@@ -12,7 +12,7 @@ class MarsAttacksModel: ObservableObject {
     
     //MARK: - Properties
     @Published var jsonDataAck = [Photo]()
-    let url: String = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2020-7-28&api_key=KeyHere"
+    let url: String = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2020-7-28&api_key=w4t0C9ceRCXNuCsUbPEqlR8GH5Lce8ghpVXlpZZo"
     
     init () {
         let session = URLSession(configuration: .default) ///Create session

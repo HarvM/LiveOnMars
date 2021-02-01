@@ -19,15 +19,21 @@ struct PhotoView: View {
     //MARK: - Properties
     @ObservedObject var getData = MarsDataModel()
     @ObservedObject var getMarsAttacksData = MarsAttacksModel()
-//
+    @ObservedObject var image = ImageOfTheDay()
+    
     //MARK: - Body of View
     var body: some View {
         NavigationView {
             VStack {
                 List {
+                    Section(header: Text ("Photo Of The Day")) {
+                        if image.dataHasBeenLoaded {
+                            Image(uiImage: image.imageOfDay!)
+                        }
+                    }
                     Section(header: Text("Demo Data")) {
                         ForEach (getData.jsonData) { i in
-                            DisplayPhotoView(imgSrc: i.imgSrc!, earthDate: i.earthDate!, sol: i.sol!)
+                            DisplayMarsView(imgSrc: i.imgSrc!, earthDate: i.earthDate!, sol: i.sol!)
                         }
                     }
                     Section(header: Text("Ack Ack")) {
@@ -40,24 +46,10 @@ struct PhotoView: View {
         }
     }
 }
-    
-    
-    
-    //                List(getData.jsonData) { i in
-    //                    DisplayPhotoView(imgSrc: i.imgSrc!, earthDate: i.earthDate!, sol: i.sol!)
-    //                }
-    //                List(getMarsAttacksData.jsonData) { ack in
-    //                    MarsAttacksView(imgSrc: ack.imgSrc!, earthDate: ack.earthDate!, sol: ack.sol!)
-    //                }
-    //            }
-    //        } .navigationBarTitle("Live on Mars")
-    //        .listStyle(PlainListStyle())
-    //    }
-    //}
-    
-    struct PhotoView_Previews: PreviewProvider {
-        static var previews: some View {
-            PhotoView()
-        }
+
+struct PhotoView_Previews: PreviewProvider {
+    static var previews: some View {
+        PhotoView()
     }
+}
 
