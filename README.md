@@ -6,7 +6,8 @@ One place for checking on any relevent news on NASA or having a look at some ama
 <a href="https://api.nasa.gov">NASA API Key</a>
 
 ## Screenshots
-![Screenshots](MarsBasic.png) &ensp;
+![Screenshots](PhotoNew.png) &ensp;
+![Screenshots](PhotoNew1.png) &ensp;
 ![Screenshots](NewsMain.png) &ensp;
 ![Screenshots](WebView.png) &ensp;
 
