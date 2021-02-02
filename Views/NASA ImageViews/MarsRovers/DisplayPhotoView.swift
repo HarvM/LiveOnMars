@@ -19,19 +19,21 @@ struct DisplayMarsView: View {
     //MARK: - Body of the view
     var body: some View {
         HStack(spacing: 20) {
-            ///Use of AnimatedImage from SDWebImageSwiftUI
-            AnimatedImage(url: URL(string: imgSrc))
-                .resizable()
-                .indicator(SDWebImageActivityIndicator.medium)
-                .frame(width: 150, height: 150, alignment: .leading)
-                .clipShape(Circle())
-                .overlay(
-                    Circle().stroke(Color.red, lineWidth: 0.5))
-            VStack{
-                Text("Date: \(earthDate)")
-                    .font(.headline)
-                Text("Sol date: \(sol)")
-                    .font(.subheadline)
+            VStack {
+                ///Use of AnimatedImage from SDWebImageSwiftUI
+                AnimatedImage(url: URL(string: imgSrc))
+                    .resizable()
+                    .indicator(SDWebImageActivityIndicator.medium)
+                    .frame(width: 130, height: 130, alignment: .leading)
+                    .clipShape(Circle())
+                    .overlay(
+                        Circle().stroke(Color.red, lineWidth: 0.5))
+                VStack{
+                    Text("Date: \(earthDate)")
+                        .font(.footnote)
+                    Text("Sol date: \(sol)")
+                        .font(.footnote)
+                }
             }
         }
     }

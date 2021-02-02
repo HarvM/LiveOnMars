@@ -13,11 +13,11 @@ class ImageOfTheDay: ObservableObject {
     
     //MARK: - Properties
     @Published var imageOfDay: UIImage? = nil
-    @Published var explanation: String = nil
+//    @Published var explanation: String = nil
     @Published var dataHasBeenLoaded: Bool = false
     
     init() {
-        ///URL for the NASA API - can be used with the supplied DEMO_KEY
+        ///URL for the NASA API - can be used with the supplied DEMO_KEY for a limited number of requests
         loadJSON("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
     }
     
@@ -33,7 +33,7 @@ class ImageOfTheDay: ObservableObject {
             ///Error catches
             (data,response,error) in
             guard error == nil else {
-                print(error)
+                print("Error: \(String(describing: error))")
                 return
             }
             guard let content = data else {
@@ -58,7 +58,7 @@ class ImageOfTheDay: ObservableObject {
         let task = URLSession.shared.dataTask(with: request) {
             (data, response, error) in
             guard error == nil else {
-                print(error)
+                print("Error: \(String(describing: error))")
                 return
             }
             guard let content = data else {
@@ -70,7 +70,7 @@ class ImageOfTheDay: ObservableObject {
                 self.imageOfDay = UIImage(data: content)
                 self.dataHasBeenLoaded = true
             }
-            print("All set cappy")
+            print("All set")
         }
         task.resume()
     }

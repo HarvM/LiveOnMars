@@ -19,32 +19,43 @@ struct PhotoView: View {
     //MARK: - Properties
     @ObservedObject var getData = MarsDataModel()
     @ObservedObject var getMarsAttacksData = MarsAttacksModel()
-    @ObservedObject var image = ImageOfTheDay()
     
     //MARK: - Body of View
     var body: some View {
-        NavigationView {
-            VStack {
-                List {
-                    Section(header: Text ("Photo Of The Day")) {
-                        if image.dataHasBeenLoaded {
-                            Image(uiImage: image.imageOfDay!)
+        ZStack {
+            NavigationView {
+                VStack {
+                    List {
+                        ///ImageDayView with load in singular image from API
+                        ImageOfDayView()
+                        Section(header: Text("Demo")) {
+                            ScrollView(.horizontal) {
+                                HStack {
+                                    ForEach (getData.jsonData) { i in
+                                        DisplayMarsView(imgSrc: i.imgSrc!, earthDate: i.earthDate!, sol: i.sol!)
+                                    }
+                                    .background(Color.white)
+                                }
+                            }
                         }
-                    }
-                    Section(header: Text("Demo Data")) {
-                        ForEach (getData.jsonData) { i in
-                            DisplayMarsView(imgSrc: i.imgSrc!, earthDate: i.earthDate!, sol: i.sol!)
-                        }
-                    }
-                    Section(header: Text("Ack Ack")) {
-                        ForEach(getMarsAttacksData.jsonDataAck) { ack in
-                            MarsAttacksView(imgSrc: ack.imgSrc!, earthDate: ack.earthDate!, sol: ack.sol!)
-                        }
+                        Section(header: Text("Ack Ack")) {
+                            ScrollView(.horizontal) {
+                                HStack {
+                            ForEach(getMarsAttacksData.jsonDataAck) { ack in
+                                MarsAttacksView(imgSrc: ack.imgSrc!, earthDate: ack.earthDate!, sol: ack.sol!)
+                            }
+                            .background(Color.white)
+                                }
+                            }
+                            }
                     }
                 }
             }
+            .background(Color.white)
         }
+        .background(Color.white)
     }
+    
 }
 
 struct PhotoView_Previews: PreviewProvider {

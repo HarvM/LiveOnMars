@@ -30,7 +30,7 @@
 		49A5B8EB25C86C0500A6BBE4 /* ImageOfTheDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A5B8EA25C86C0500A6BBE4 /* ImageOfTheDay.swift */; };
 		49C3792E25BA116C00E18829 /* MarsAttacksDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3792D25BA116C00E18829 /* MarsAttacksDataModel.swift */; };
 		49DAC2BB25BA1284003A4844 /* MarsAttacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DAC2BA25BA1284003A4844 /* MarsAttacksView.swift */; };
-		49E332A625BBB9FC001F9E72 /* ImageDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E332A525BBB9FC001F9E72 /* ImageDayView.swift */; };
+		49E455AB25C8D48D000DE2CF /* ImageOfDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E455AA25C8D48D000DE2CF /* ImageOfDayView.swift */; };
 		49F4151425B4786A0011B2E5 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 49F4151325B4786A0011B2E5 /* SDWebImageSwiftUI */; };
 		49F4154F25B4DC350011B2E5 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4154E25B4DC350011B2E5 /* Welcome.swift */; };
 		49F4155525B4DE320011B2E5 /* MarsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4155425B4DE320011B2E5 /* MarsDataModel.swift */; };
@@ -91,7 +91,7 @@
 		49A5B8EA25C86C0500A6BBE4 /* ImageOfTheDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOfTheDay.swift; sourceTree = "<group>"; };
 		49C3792D25BA116C00E18829 /* MarsAttacksDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsAttacksDataModel.swift; sourceTree = "<group>"; };
 		49DAC2BA25BA1284003A4844 /* MarsAttacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsAttacksView.swift; sourceTree = "<group>"; };
-		49E332A525BBB9FC001F9E72 /* ImageDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDayView.swift; sourceTree = "<group>"; };
+		49E455AA25C8D48D000DE2CF /* ImageOfDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOfDayView.swift; sourceTree = "<group>"; };
 		49F4154E25B4DC350011B2E5 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		49F4155425B4DE320011B2E5 /* MarsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsDataModel.swift; sourceTree = "<group>"; };
 		49F4155C25B4DEB00011B2E5 /* DisplayPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayPhotoView.swift; sourceTree = "<group>"; };
@@ -276,7 +276,7 @@
 		49B9E2D825C79FC600056C53 /* ImageOfTheDay */ = {
 			isa = PBXGroup;
 			children = (
-				49E332A525BBB9FC001F9E72 /* ImageDayView.swift */,
+				49E455AA25C8D48D000DE2CF /* ImageOfDayView.swift */,
 			);
 			path = ImageOfTheDay;
 			sourceTree = "<group>";
@@ -564,7 +564,7 @@
 				49031AF9250804AD00EA084D /* LiveOnMarsApp.swift in Sources */,
 				49031B2625091AB200EA084D /* PhotoView.swift in Sources */,
 				495EA3D925522C6200916474 /* ImageModel.swift in Sources */,
-				49E332A625BBB9FC001F9E72 /* ImageDayView.swift in Sources */,
+				49E455AB25C8D48D000DE2CF /* ImageOfDayView.swift in Sources */,
 				49DAC2BB25BA1284003A4844 /* MarsAttacksView.swift in Sources */,
 				49A5B8EB25C86C0500A6BBE4 /* ImageOfTheDay.swift in Sources */,
 				49F4155D25B4DEB00011B2E5 /* DisplayPhotoView.swift in Sources */,
