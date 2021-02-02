@@ -23,39 +23,38 @@ struct PhotoView: View {
     //MARK: - Body of View
     var body: some View {
         ZStack {
+            Color("background")
+                .edgesIgnoringSafeArea(.all)
             NavigationView {
                 VStack {
                     List {
                         ///ImageDayView with load in singular image from API
                         ImageOfDayView()
-                        Section(header: Text("Demo")) {
+                        ///Section that displays the first call from the API
+                        Section(header: Text("Demo").foregroundColor(.red)) {
                             ScrollView(.horizontal) {
                                 HStack {
                                     ForEach (getData.jsonData) { i in
                                         DisplayMarsView(imgSrc: i.imgSrc!, earthDate: i.earthDate!, sol: i.sol!)
                                     }
-                                    .background(Color.white)
                                 }
                             }
                         }
-                        Section(header: Text("Ack Ack")) {
+                        ///Second section that calls
+                        Section(header: Text("Ack Ack").foregroundColor(.red)) {
                             ScrollView(.horizontal) {
                                 HStack {
-                            ForEach(getMarsAttacksData.jsonDataAck) { ack in
-                                MarsAttacksView(imgSrc: ack.imgSrc!, earthDate: ack.earthDate!, sol: ack.sol!)
-                            }
-                            .background(Color.white)
+                                    ForEach(getMarsAttacksData.jsonDataAck) { ack in
+                                        MarsAttacksView(imgSrc: ack.imgSrc!, earthDate: ack.earthDate!, sol: ack.sol!)
+                                    }
                                 }
                             }
-                            }
-                    }
-                }
-            }
-            .background(Color.white)
-        }
-        .background(Color.white)
+                        }
+                    } .background(Color("background").edgesIgnoringSafeArea(.all))
+                } .background(Color("background").edgesIgnoringSafeArea(.all))
+            }  .background(Color("background").edgesIgnoringSafeArea(.all))
+        }  .background(Color("background").edgesIgnoringSafeArea(.all))
     }
-    
 }
 
 struct PhotoView_Previews: PreviewProvider {

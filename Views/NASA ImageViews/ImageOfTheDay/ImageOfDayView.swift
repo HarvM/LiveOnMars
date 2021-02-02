@@ -16,8 +16,11 @@ struct ImageOfDayView: View {
    
     var body: some View {
         VStack {
+            HStack {
             Text("Image Of The Day")
                 .font(.largeTitle)
+                .foregroundColor(.red)
+            }
             ///Load in the image from the networking
             if image.dataHasBeenLoaded {
                 Image(uiImage: image.imageOfDay!)
