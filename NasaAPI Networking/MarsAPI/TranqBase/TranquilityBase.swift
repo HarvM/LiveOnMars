@@ -16,8 +16,8 @@ import Foundation
 
 import Foundation
 
-// MARK: - Welcome
-struct Welcome: Codable {
+// MARK: - TranquilityBase
+struct TranquilityBase: Codable {
     var photos: [Photo]?
 }
 
@@ -52,6 +52,7 @@ struct Camera: Codable {
 }
 
 enum FullName: String, Codable {
+    case chemistryAndCameraComplex = "Chemistry and Camera Complex"
     case frontHazardAvoidanceCamera = "Front Hazard Avoidance Camera"
     case marsHandLensImager = "Mars Hand Lens Imager"
     case mastCamera = "Mast Camera"
@@ -60,6 +61,7 @@ enum FullName: String, Codable {
 }
 
 enum CameraName: String, Codable {
+    case chemcam = "CHEMCAM"
     case fhaz = "FHAZ"
     case mahli = "MAHLI"
     case mast = "MAST"

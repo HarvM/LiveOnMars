@@ -18,8 +18,7 @@ struct PhotoView: View {
     
     //MARK: - Properties
     @ObservedObject var getData = MarsDataModel()
-    @ObservedObject var getMarsAttacksData = MarsAttacksModel()
-    
+   
     //MARK: - Body of View
     var body: some View {
         ZStack {
@@ -41,15 +40,15 @@ struct PhotoView: View {
                             }
                         }
                         ///Second section that calls
-                        Section(header: Text("Ack Ack").foregroundColor(.red)) {
-                            ScrollView(.horizontal) {
-                                HStack {
-                                    ForEach(getMarsAttacksData.jsonDataAck) { ack in
-                                        MarsAttacksView(imgSrc: ack.imgSrc!, earthDate: ack.earthDate!, sol: ack.sol!)
-                                    }
-                                }
-                            }
-                        }
+//                        Section(header: Text("Ack Ack").foregroundColor(.red)) {
+//                            ScrollView(.horizontal) {
+//                                HStack {
+//                                    ForEach(getMarsAttacksData.jsonDataAck) { ack in
+//                                        MarsAttacksView(imgSrc: ack.imgSrc!, earthDate: ack.earthDate!, sol: ack.sol!)
+//                                    }
+//                                }
+//                            }
+//                        }
                     } .background(Color("background").edgesIgnoringSafeArea(.all))
                 } .background(Color("background").edgesIgnoringSafeArea(.all))
             }  .background(Color("background").edgesIgnoringSafeArea(.all))
