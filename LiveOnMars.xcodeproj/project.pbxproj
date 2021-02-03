@@ -28,7 +28,6 @@
 		49A2BF48255349CC0047384B /* NewsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2BF47255349CC0047384B /* NewsAPIResponse.swift */; };
 		49A2BF4D255349EE0047384B /* NewsListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2BF4C255349EE0047384B /* NewsListItem.swift */; };
 		49A5B8EB25C86C0500A6BBE4 /* ImageOfTheDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A5B8EA25C86C0500A6BBE4 /* ImageOfTheDay.swift */; };
-		49DAC2BB25BA1284003A4844 /* MarsAttacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DAC2BA25BA1284003A4844 /* MarsAttacksView.swift */; };
 		49E455AB25C8D48D000DE2CF /* ImageOfDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E455AA25C8D48D000DE2CF /* ImageOfDayView.swift */; };
 		49F4151425B4786A0011B2E5 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 49F4151325B4786A0011B2E5 /* SDWebImageSwiftUI */; };
 		49F4154F25B4DC350011B2E5 /* TranquilityBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4154E25B4DC350011B2E5 /* TranquilityBase.swift */; };
@@ -88,7 +87,6 @@
 		49A2BF47255349CC0047384B /* NewsAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIResponse.swift; sourceTree = "<group>"; };
 		49A2BF4C255349EE0047384B /* NewsListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListItem.swift; sourceTree = "<group>"; };
 		49A5B8EA25C86C0500A6BBE4 /* ImageOfTheDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOfTheDay.swift; sourceTree = "<group>"; };
-		49DAC2BA25BA1284003A4844 /* MarsAttacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsAttacksView.swift; sourceTree = "<group>"; };
 		49E455AA25C8D48D000DE2CF /* ImageOfDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOfDayView.swift; sourceTree = "<group>"; };
 		49F4154E25B4DC350011B2E5 /* TranquilityBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranquilityBase.swift; sourceTree = "<group>"; };
 		49F4155425B4DE320011B2E5 /* MarsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsDataModel.swift; sourceTree = "<group>"; };
@@ -252,15 +250,6 @@
 			path = WebView;
 			sourceTree = "<group>";
 		};
-		4972318925C9BF300019A706 /* TranqBase */ = {
-			isa = PBXGroup;
-			children = (
-				49F4154E25B4DC350011B2E5 /* TranquilityBase.swift */,
-				49F4155425B4DE320011B2E5 /* MarsDataModel.swift */,
-			);
-			path = TranqBase;
-			sourceTree = "<group>";
-		};
 		499F1639254CF0FB00561450 /* NewsAPI Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,7 +281,6 @@
 			isa = PBXGroup;
 			children = (
 				49F4155C25B4DEB00011B2E5 /* DisplayPhotoView.swift */,
-				49DAC2BA25BA1284003A4844 /* MarsAttacksView.swift */,
 			);
 			path = MarsRovers;
 			sourceTree = "<group>";
@@ -300,7 +288,8 @@
 		49E3328C25BB85BB001F9E72 /* MarsAPI */ = {
 			isa = PBXGroup;
 			children = (
-				4972318925C9BF300019A706 /* TranqBase */,
+				49F4154E25B4DC350011B2E5 /* TranquilityBase.swift */,
+				49F4155425B4DE320011B2E5 /* MarsDataModel.swift */,
 			);
 			path = MarsAPI;
 			sourceTree = "<group>";
@@ -569,7 +558,6 @@
 				49031B2625091AB200EA084D /* PhotoView.swift in Sources */,
 				495EA3D925522C6200916474 /* ImageModel.swift in Sources */,
 				49E455AB25C8D48D000DE2CF /* ImageOfDayView.swift in Sources */,
-				49DAC2BB25BA1284003A4844 /* MarsAttacksView.swift in Sources */,
 				49A5B8EB25C86C0500A6BBE4 /* ImageOfTheDay.swift in Sources */,
 				49F4155D25B4DEB00011B2E5 /* DisplayPhotoView.swift in Sources */,
 				4943AF38257DC02200AEB63F /* NewsItemView.swift in Sources */,

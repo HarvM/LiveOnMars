@@ -13,7 +13,6 @@ class ImageOfTheDay: ObservableObject {
     
     //MARK: - Properties
     @Published var imageOfDay: UIImage? = nil
-//    @Published var explanation: String = nil
     @Published var dataHasBeenLoaded: Bool = false
     
     init() {

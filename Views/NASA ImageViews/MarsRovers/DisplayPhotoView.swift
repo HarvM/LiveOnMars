@@ -35,8 +35,8 @@ struct DisplayMarsView: View {
                         .font(.footnote)
                 }
             }
-        }
-    }
+        }  
+    }  
 }
 
 //struct DisplayPhotoView_Previews: PreviewProvider {

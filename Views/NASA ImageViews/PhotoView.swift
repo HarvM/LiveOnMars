@@ -17,8 +17,8 @@ struct PhotoView: View {
     }
     
     //MARK: - Properties
-    @ObservedObject var getData = MarsDataModel()
-   
+    @ObservedObject var getData = TranquilityBaseDataModel()
+    
     //MARK: - Body of View
     var body: some View {
         ZStack {
@@ -29,30 +29,27 @@ struct PhotoView: View {
                     List {
                         ///ImageDayView with load in singular image from API
                         ImageOfDayView()
+                            .padding(.leading, -16)
+                            .padding(.trailing, -16)
+                        Spacer()
                         ///Section that displays the first call from the API
-                        Section(header: Text("Demo").foregroundColor(.red)) {
-                            ScrollView(.horizontal) {
-                                HStack {
-                                    ForEach (getData.jsonData) { i in
-                                        DisplayMarsView(imgSrc: i.imgSrc!, earthDate: i.earthDate!, sol: i.sol!)
-                                    }
-                                }
-                            }
+                        ScrollView(.horizontal) {
+                            HStack {
+                                ForEach (getData.jsonData) { i in
+                                    DisplayMarsView(imgSrc: i.imgSrc!, earthDate: i.earthDate!, sol: i.sol!)
+                                } 
+                            } 
                         }
-                        ///Second section that calls
-//                        Section(header: Text("Ack Ack").foregroundColor(.red)) {
-//                            ScrollView(.horizontal) {
-//                                HStack {
-//                                    ForEach(getMarsAttacksData.jsonDataAck) { ack in
-//                                        MarsAttacksView(imgSrc: ack.imgSrc!, earthDate: ack.earthDate!, sol: ack.sol!)
-//                                    }
-//                                }
-//                            }
-//                        }
-                    } .background(Color("background").edgesIgnoringSafeArea(.all))
-                } .background(Color("background").edgesIgnoringSafeArea(.all))
-            }  .background(Color("background").edgesIgnoringSafeArea(.all))
-        }  .background(Color("background").edgesIgnoringSafeArea(.all))
+                        .padding(.leading, -16)
+                        .padding(.trailing, -16)
+                    }
+                    .listStyle(PlainListStyle())
+                    ///Ensures that the list is closer to the top of the window
+                    .navigationBarTitleDisplayMode(.inline)
+                }
+            }
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
